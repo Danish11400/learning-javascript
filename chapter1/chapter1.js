@@ -33,6 +33,34 @@ hello = "Dr jatka";
 console.log(hello);
 
 // class8 - of - chapter1 - let,const and var
+// in notes and in readme
+
+
+
+// class9 - of - chapter1 - Basic Operators
+
+let presentYear = 2025;
+let dob = 2007;
+const ageDanish = presentYear - dob;
+const ageSarah = presentYear - 2007;
+// console.log((presentYear - dob) * 2 / 5 + 0.8);
+console.log(ageDanish);
+console.log(ageSarah);
+
+
+
+let two = "Danish";
+let three = "Nisar";
+console.log(two + " " + three);
+
+console.log(ageDanish > ageSarah);
+console.log(dob < presentYear);
+console.log(ageDanish < dob);
+
+console.log(ageDanish >= ageSarah);
+
+
+// class10 - of - chapter1 - Operator Precedense
 
 
 
