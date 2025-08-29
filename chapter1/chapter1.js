@@ -62,7 +62,8 @@ console.log(ageDanish >= ageSarah);
 
 // class10 - of - chapter1 - Operator Precedense
 
-
+let hi = 33;
+console.log(hi - 3 > hi + 3);
 
 
 

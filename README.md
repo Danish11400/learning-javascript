@@ -15,3 +15,9 @@
 ![📄 View image](./images/Image%20to%20PDF%2020250829%2011.10.54_4.jpg)
 
 ## class10 - of - chapter1 - Operator Precedense
+![📄 View image](./images/class-10-chapter1_1.jpg)
+![📄 View image](./images/class-10-chapter1_2.jpg)
+![📄 View image](./images/class-10-chapter1_3.jpg)
+![📄 View image](./images/class-10-chapter1_4.jpg)
+
+## class11 - of -  chapter1 - 
