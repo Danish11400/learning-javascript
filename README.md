@@ -21,7 +21,7 @@
 ![📄 View image](./images/class-10-chapter1_4.jpg)
 
 ## class11 to 13 - of -  chapter1 - [challenge1]
-*i do the challenge in my folder challenges.
+*i do the challenge in my folder challenges.*
 
 
 ## class14 - of - chapter1 - [string and templeate litreals]
