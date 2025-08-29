@@ -32,6 +32,11 @@ console.log(hello);
 hello = "Dr jatka";
 console.log(hello);
 
+// class8 - of - chapter1 - let,const and var
+
+
+
+
 
 
 
