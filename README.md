@@ -1,3 +1,8 @@
+![📄 View image](./images/) 
+it is format
+
+
+
 ### learning-javascript
 ![📄 View image](./images/1st-five-topics_of_chaptet1_1.jpg)
 ![📄 View image](./images/1st-five-topics_of_chaptet1_2.jpg)
@@ -28,7 +33,13 @@
 ![📄 View image](./images/string%20&%20templeate%20literal_1.jpg)
 ![📄 View image](./images/string%20&%20templeate%20literal_2.jpg)
 
-## Class15 - of - chpater1 [taking decisions if else statementss]
+## Class15 to 18 - of - chpater1 [taking decisions if else statements & type conversion and type coercion]
+![📄 View image](./images/class%2014to18%20of%20chapter1_1.jpg)
+![📄 View image](./images/class%2014to18%20of%20chapter1_2.jpg)
+![📄 View image](./images/class%2014to18%20of%20chapter1_3.jpg)
+
+
+
 
 
 
