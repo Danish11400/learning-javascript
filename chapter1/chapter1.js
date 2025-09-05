@@ -91,6 +91,15 @@ console.log("string with \n\
 multiple \n\
 lines...");
 
+// Class15 - of - chpater1 taking decisions if else statements
+
+const age = 310000;
+if (age >= 18) {
+    console.log(`Dr.jatka can get drawing license`);
+}
+else {
+    console.log(`Dr.jatks is ${18 - age} years youger to get license`);
+}
 
 
 
