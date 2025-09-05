@@ -1,5 +1,5 @@
 ![📄 View image](./images/) 
-it is format
+### it is format
 
 
 
@@ -33,10 +33,18 @@ it is format
 ![📄 View image](./images/string%20&%20templeate%20literal_1.jpg)
 ![📄 View image](./images/string%20&%20templeate%20literal_2.jpg)
 
-## Class15 to 18 - of - chpater1 [taking decisions if else statements & type conversion and type coercion]
+
+## class 15 [challenge2]
+*complete the challenge in challenge folder*
+
+## Class16 to 18 - of - chpater1 [taking decisions if else statements & type conversion and type coercion]
 ![📄 View image](./images/class%2014to18%20of%20chapter1_1.jpg)
 ![📄 View image](./images/class%2014to18%20of%20chapter1_2.jpg)
 ![📄 View image](./images/class%2014to18%20of%20chapter1_3.jpg)
+
+## Class19 - of - chapter1 - truthy and falsy statements
+![📄 View image](./images//truly&falsy_1.jpg)
+
 
 
 

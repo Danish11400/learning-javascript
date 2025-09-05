@@ -114,4 +114,32 @@ console.log(Number(hello));
 console.log(typeof NaN);
 
 
+// class19 - of - chapter1 - truthy and falsy statements
+
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean("danish"));
+console.log(Boolean(21));
+
+
+const money = 0;
+if (money) {
+    console.log(`don't spend it all`);
+}
+else {
+    console.log(`get a job broo..`);
+}
+
+
+let height;
+if (height) {
+    console.log(`😁 YAY! height is defined`);
+}
+else {
+    console.log(`😒 height is undefined`);
+}
+
+
 
