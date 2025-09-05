@@ -25,3 +25,6 @@
 
 
 ## class14 - of - chapter1 - [string and templeate litreals]
+![📄 View image](./images/string%20&%20templeate%20literal_1.jpg)
+![📄 View image](./images/string%20&%20templeate%20literal_2.jpg)
+
