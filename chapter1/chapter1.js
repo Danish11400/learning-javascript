@@ -101,5 +101,17 @@ else {
     console.log(`Dr.jatks is ${18 - age} years youger to get license`);
 }
 
+// class18 - of - chapter1 Type conversion and coereion
+
+const inputYear = "20";
+console.log(inputYear + 10);
+
+console.log(Number(inputYear) + 10);
+
+
+const hello = "motu";
+console.log(Number(hello));
+console.log(typeof NaN);
+
 
 
