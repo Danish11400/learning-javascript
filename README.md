@@ -60,5 +60,8 @@
 ### Class22 - of - chapter1 - Logical Operators
 ![📄 View image](./images/class22-of-chapter1_1.jpg) 
 
+### Class24 - of - chapter1 - challenge3 completed
+*completed in my challenges folder*
+
 
 
