@@ -53,7 +53,8 @@
 ![📄 View image](./images/class20-of-chapter1_4.jpg) 
 
 
-### Class21 - of - chapter1 - Boolean Logic
+### Class21 - of - chapter1 - Boolean Logic & Operators
+![📄 View image](./images/class21_of_chapter1_1.jpg)
 
 
 

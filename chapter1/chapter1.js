@@ -195,5 +195,8 @@ if (hey3 != 21) {
 }
 
 
-// class21 - of - chapter1 - Boolean Logic
+// class21 - of - chapter1 - Boolean Logic & Operators
+
+// no_code_in_this_lecture_only_logic_so_only_readme_is_written
+
 
