@@ -213,6 +213,71 @@ else {
 }
 
 
-// Class24 - of - chapter1 - challenge3 completed 
+// Class - 23 & 24 - of - chapter1 - challenge3 completed
+
+
+//  Class25 - of - chapter1 - The Switch Statement
+
+
+let day = prompt(`Enter your day`)
+
+switch (day) {
+    case "monday": // day === 'monday'
+
+        console.log('Plan course structure');
+
+        console.log('Go to coding meetup');
+
+        break;
+
+    case 'tuesday':
+
+        console.log('Prepare theory videos');
+
+        break;
+
+    case 'wednesday':
+
+    case 'thursday':
+
+        console.log('Write code examples');
+
+        break;
+
+    case 'friday':
+
+        console.log('Record videos');
+
+        break;
+
+    case 'saturday':
+
+    case 'sunday':
+
+        console.log('Enjoy the weekend :D');
+
+        break;
+
+    default:
+
+        console.log('Not a valid day!');
+
+}
+
+// Class26 - of - chapter1 - Statements and Expressions
+
+
+/* here we just learn the difference between expressiond and statements only thing to remember from that lecture in future classes we have to learn more about this */
+
+
+
+// Class27 - of -chapter1 - The Conditional Operator
+
+const age3 = prompt(`Enter your age`)
+
+age3 >= 18 ?
+    console.log(`You can smoke ciggrates 🚬`) :
+    console.log(`NO you can smoke ciggrates 🚬`)
+
 
 

@@ -60,8 +60,25 @@
 ### Class22 - of - chapter1 - Logical Operators
 ![📄 View image](./images/class22-of-chapter1_1.jpg) 
 
-### Class24 - of - chapter1 - challenge3 completed
+
+
+### Class - 23 & 24 - of - chapter1 - challenge3 completed
 *completed in my challenges folder*
+
+
+### Class25 - of - chapter1 - The Switch Statement
+![📄 View image](./images/class25-chapter1_1.jpg) 
+
+
+### Class26 - of - chapter1 - Statements and Expressions
+**here we just learn the difference between expressiond and statements only thing to remember from that lecture in future classes we have to learn more about this**
+
+
+### Class27 - of -chapter1 - The Conditional Operator
+![📄 View image](./images/class26&27-chapter1_1.jpg)
+![📄 View image](./images/class26&27-chapter1_2.jpg) 
+
+
 
 
 
