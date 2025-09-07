@@ -79,6 +79,14 @@
 ![📄 View image](./images/class26&27-chapter1_2.jpg) 
 
 
+### Class 28 to 29 - of - chapter1 - challenge4
+**i done this in my challenges folder**
+
+
+### Class 30 - of - chapter1 - Javascript Releases
+*only history of js*
+
+
 
 
 

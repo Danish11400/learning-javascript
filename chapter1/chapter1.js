@@ -279,5 +279,13 @@ age3 >= 18 ?
     console.log(`You can smoke ciggrates 🚬`) :
     console.log(`NO you can smoke ciggrates 🚬`)
 
+// Class 28 to 29 - of - chapter1 - challenge4
+/* i done this in challenges folder */
+
+
+// Class 30 - of - chapter1 - Javascript Releases
+
+/* in this we read about js history */
+
 
 
