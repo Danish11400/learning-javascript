@@ -57,4 +57,8 @@
 ![📄 View image](./images/class21_of_chapter1_1.jpg)
 
 
+### Class22 - of - chapter1 - Logical Operators
+![📄 View image](./images/class22-of-chapter1_1.jpg) 
+
+
 

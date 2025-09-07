@@ -197,6 +197,19 @@ if (hey3 != 21) {
 
 // class21 - of - chapter1 - Boolean Logic & Operators
 
-// no_code_in_this_lecture_only_logic_so_only_readme_is_written
+// No_code_in_this_lecture_only_logic_so_only_readme_is_written
+
+
+// Class22 - of - chapter1 - Logical Operators
+
+const license2 = true;
+const goodVision = false;
+
+if (license2 && !goodVision) {
+    console.log(`sahrah can drive`);
+}
+else {
+    console.log(`sahrah cant drive`);
+}
 
 
