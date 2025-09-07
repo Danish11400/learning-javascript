@@ -142,4 +142,58 @@ else {
 }
 
 
+// class20 - of - chapter1 - Equality Operators
+
+const gaseetaram = 18;
+if (gaseetaram === '18') {
+    console.log(`mara bees saal ka tajurba hai`);
+}
+
+// const gaseetaram = 18;
+// if (gaseetaram == '18') {
+//     console.log(`mara bees saal ka tajurba hai`);
+// }
+
+const hey = prompt(`What is ur fav. no. ?`);
+console.log(hey);
+
+if (hey == 22) {
+    console.log(`Cool😎 bro!`);
+}
+
+const hey1 = Number(prompt(`What is ur fav. no. ?`));
+console.log(hey);
+
+if (hey1 === 21) {
+    console.log(`Cool😎 bro!`);
+}
+
+const chingamSir = prompt(`Kuch to likhoo broo...`);
+
+if (chingamSir == 21) {
+    console.log(`Hello 21`);
+}
+else if (chingamSir == 7) {
+    console.log(`Hello 27`);
+}
+else if (chingamSir == "john") {
+    console.log(`Tumhaa Kanoon ki ksm Ruk javoo..`);
+}
+else {
+    console.log(`dafa gs....`);
+}
+
+
+const hey2 = prompt(`enter something broo...`);
+if (hey2 !== 21) {
+    console.log(`tick u`);
+}
+
+const hey3 = prompt(`enter something broo...`);
+if (hey3 != 21) {
+    console.log(`tick u`);
+}
+
+
+// class21 - of - chapter1 - Boolean Logic
 

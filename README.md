@@ -12,42 +12,48 @@
 ![📄 View image](./images/1st-five-topics_of_chaptet1_6.jpg)
 ![📄 View image](./images/starts-class8-of-chapter1.jpg)
 
-## class9 - of - chapter1 - [Basic Operators]
+### class9 - of - chapter1 - [Basic Operators]
 
 ![📄 View image](./images/Image%20to%20PDF%2020250829%2011.10.54_1.jpg)
 ![📄 View image](./images/Image%20to%20PDF%2020250829%2011.10.54_2.jpg)
 ![📄 View image](./images/Image%20to%20PDF%2020250829%2011.10.54_3.jpg)
 ![📄 View image](./images/Image%20to%20PDF%2020250829%2011.10.54_4.jpg)
 
-## class10 - of - chapter1 - [Operator Precedense]
+### class10 - of - chapter1 - [Operator Precedense]
 ![📄 View image](./images/class-10-chapter1_1.jpg)
 ![📄 View image](./images/class-10-chapter1_2.jpg)
 ![📄 View image](./images/class-10-chapter1_3.jpg)
 ![📄 View image](./images/class-10-chapter1_4.jpg)
 
-## class11 to 13 - of -  chapter1 - [challenge1]
+### class11 to 13 - of -  chapter1 - [challenge1]
 *i do the challenge in my folder challenges.*
 
 
-## class14 - of - chapter1 - [string and templeate litreals]
+### class14 - of - chapter1 - [string and templeate litreals]
 ![📄 View image](./images/string%20&%20templeate%20literal_1.jpg)
 ![📄 View image](./images/string%20&%20templeate%20literal_2.jpg)
 
 
-## class 15 [challenge2]
+### class 15 [challenge2]
 *complete the challenge in challenge folder*
 
-## Class16 to 18 - of - chpater1 [taking decisions if else statements & type conversion and type coercion]
+### Class16 to 18 - of - chpater1 [taking decisions if else statements & type conversion and type coercion]
 ![📄 View image](./images/class%2014to18%20of%20chapter1_1.jpg)
 ![📄 View image](./images/class%2014to18%20of%20chapter1_2.jpg)
 ![📄 View image](./images/class%2014to18%20of%20chapter1_3.jpg)
 
-## Class19 - of - chapter1 - truthy and falsy statements
+### Class19 - of - chapter1 - truthy and falsy statements
 ![📄 View image](./images//truly&falsy_1.jpg)
 
 
+### Class20 - of - chapter1 - Equality Operators
+![📄 View image](./images/class20-of-chapter1_1.jpg) 
+![📄 View image](./images/class20-of-chapter1_2.jpg) 
+![📄 View image](./images/class20-of-chapter1_3.jpg) 
+![📄 View image](./images/class20-of-chapter1_4.jpg) 
 
 
+### Class21 - of - chapter1 - Boolean Logic
 
 
 
