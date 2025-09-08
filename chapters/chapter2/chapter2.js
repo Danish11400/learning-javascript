@@ -51,10 +51,10 @@ const age = clacAge3(2007);
 console.log(age);
 
 
-const mobileNameAndWarranty = (buyYear, timeUsed, naam) => {
+const mobileNameAndWarranty = (buyYear, timeUsedInYears, naam) => {
     const warrantyTime = 2025 - buyYear;
-    const warrantyLeft = warrantyTime - timeUsed;
-    return `${naam} warranty left only ${warrantyLeft}`;
+    const warrantyLeft = warrantyTime - timeUsedInYears;
+    return `${naam} warranty left only ${warrantyLeft} years`;
 }
-const hi3 = mobileNameAndWarranty(2023, 1, "poco");
+const hi3 = mobileNameAndWarranty(2023, 1.4, "poco");
 console.log(hi3)
