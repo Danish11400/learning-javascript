@@ -93,7 +93,7 @@
 - use strict mode in js file before writting any code eg.
 ``` 'use strict';```
 
-### class3 - of - chapter2 - Functions
+### Class3 - of - chapter2 - Functions
 ![📄 View image](./images/class3-chapter2_1.jpg) 
 ![📄 View image](./images/class3-chapter2_2.jpg) 
 ![📄 View image](./images/class3-chapter2_3.jpg) 
@@ -104,6 +104,14 @@
 
 ![📄 View image](./images/return%20in%20functions_1.jpg)
 ![📄 View image](./images/return%20in%20functions_2.jpg)
+
+
+### Class4 - of - chapter2 - Function Declaration vs Expressions
+![📄 View image](./images/class4-chapter2_1.jpg) 
+![📄 View image](./images/class4-chapter2_2.jpg) 
+
+
+
 
 
 
