@@ -21,4 +21,4 @@ function pen(e, f) {
     console.log(g);
 }
 pen(8, 8);
-console.log(g);
+
