@@ -43,3 +43,18 @@ const calcAge2 = function (birthYear2) {
 const age2 = calcAge2(2007);
 console.log(age2);
 
+
+// Class5 - of - chapter2 - Arrow Functions
+
+const clacAge3 = birthYear => 2073 - birthYear;
+const age = clacAge3(2007);
+console.log(age);
+
+
+const mobileNameAndWarranty = (buyYear, timeUsed, naam) => {
+    const warrantyTime = 2025 - buyYear;
+    const warrantyLeft = warrantyTime - timeUsed;
+    return `${naam} warranty left only ${warrantyLeft}`;
+}
+const hi3 = mobileNameAndWarranty(2023, 1, "poco");
+console.log(hi3)
