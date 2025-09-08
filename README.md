@@ -98,8 +98,8 @@
 ![📄 View image](./images/class3-chapter2_2.jpg) 
 ![📄 View image](./images/class3-chapter2_3.jpg) 
 
-![📺 watch video](https://youtube.com/shorts/6FXoRSh_YC8?si=HtvzaTMZpSGD6HAN)
-![📽️ watch video](https://youtu.be/y3i4Fca-_H4?si=GAZILy-WOmEczzo1)
+![▶️ Watch the video](https://youtube.com/shorts/6FXoRSh_YC8?si=HtvzaTMZpSGD6HAN)
+![▶️ Watch the video](https://youtu.be/y3i4Fca-_H4?si=GAZILy-WOmEczzo1)
 
 
 
