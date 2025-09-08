@@ -1,0 +1,14 @@
+body {
+    background-color: teal;
+    font-family: cursive;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div {
+    color: black;
+    font-size: 4rem;
+}
