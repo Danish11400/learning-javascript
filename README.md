@@ -102,6 +102,13 @@
 [![▶️ Watch the video](./images/thumbnail.png)](https://youtu.be/y3i4Fca-_H4?si=GAZILy-WOmEczzo1)
 
 
+![📄 View image](./images/return%20in%20functions_1.jpg)
+![📄 View image](./images/return%20in%20functions_2.jpg)
+
+
+
+
+
 
 
 
