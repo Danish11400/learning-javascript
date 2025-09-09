@@ -29,7 +29,7 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.*/
 
 
 var calcAverage = (a, b, c) => {
-    const avgscore = (a + b + c) / 3;
+    const avgscore = (a + b + c) / 3; /
     return avgscore;
 }
 const avgDolphins = calcAverage(
@@ -38,6 +38,8 @@ const avgDolphins = calcAverage(
     Number(prompt("Enter Dolphins Round three Score")),
 );
 
+
+
 const avgKoalas = calcAverage(
     Number(prompt("Enter Kolas Round One Score")),
     Number(prompt("Enter Kolas Round Two Score")),
@@ -45,16 +47,20 @@ const avgKoalas = calcAverage(
 );
 
 
+
 function checkWinner(avgDolphins, avgKoalas) {
     if (avgDolphins >= 2 * avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= 2 * avgDolphins) {
         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
-    }
-    else {
+    } else {
         return `No team wins...`;
     }
 }
 
+
 const winner = checkWinner(avgDolphins, avgKoalas);
 console.log(winner);
+
+
+// NOTE NAN IS ALWAYS TYPEOF NUMBER BUT NAN IS NOT A NUMBER
