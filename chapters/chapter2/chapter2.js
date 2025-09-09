@@ -1,3 +1,6 @@
+/*      
+
+
 // Class 1 to 2 - of - chapter2 - Activating Strict Mode
 
 'use strict';
@@ -113,8 +116,20 @@ const mobileNameAndWarranty3 = (buyYear3, timeUsedInYears3, naam3) => {
 const hi321 = mobileNameAndWarranty3(prompt(`enter buying year`), prompt(`enter how many years u used it`), prompt(`enter name of ur device`));
 console.log(hi321);
 
+// Class 8 to 9 - of - chapter2 - Challenge5
+//i have done it this challenge in my challenge folder
+*/
+
+// Class10 - of chapter2 - introduction to Array
 
 
+var months = ["jan", "feb", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december",];
+console.log(months[6]);
+console.log(months.length);
+
+const hello342 = "introvert";
+const newly = [hello342, "danish", 2025 - 2007, months];
+console.log(newly);
 
 
 

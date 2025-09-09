@@ -191,8 +191,9 @@ console.log(hi321);
 ### Class 8 to 9 - of - chapter2 - Challenge5
 *i have done it this challenge in my challenge folder*
 
-
-
+### Class10 - of chapter2 - introduction to Array
+![📄 View image](./images/class10-%20chapter2_1.jpg) 
+![📄 View image](./images/class10-%20chapter2_2.jpg) 
 
 
 
