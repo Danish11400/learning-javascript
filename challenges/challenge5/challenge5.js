@@ -53,9 +53,12 @@ function checkWinner(avgDolphins, avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= 2 * avgDolphins) {
         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
-    } else {
+    }
+    else {
+
         return `No team wins...`;
     }
+
 }
 
 
@@ -64,3 +67,5 @@ console.log(winner);
 
 
 // NOTE NAN IS ALWAYS TYPEOF NUMBER BUT NAN IS NOT A NUMBER
+
+
