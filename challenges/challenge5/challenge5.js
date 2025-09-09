@@ -37,20 +37,21 @@ const avgDolphins = calcAverage(
     Number(prompt("Enter Dolphins Round two Score")),
     Number(prompt("Enter Dolphins Round three Score")),
 );
+
 const avgKoalas = calcAverage(
     Number(prompt("Enter Kolas Round One Score")),
     Number(prompt("Enter Kolas Round Two Score")),
-    Number(prompt("Enter Kolas Round Three Score"))
+    Number(prompt("Enter Kolas Round Three Score")),
 );
+
 
 function checkWinner(avgDolphins, avgKoalas) {
     if (avgDolphins >= 2 * avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= 2 * avgDolphins) {
         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
-    } else if (avgDolphins !== typeof Number && avgKoalas !== typeof Number) {
-        return `Please enter valid scores`;
-    } else {
+    }
+    else {
         return `No team wins...`;
     }
 }
