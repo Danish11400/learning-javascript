@@ -28,8 +28,8 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.*/
 
 
 
-var calcAverage = (team1score1, team1score2, team1score3) => {
-    const team1score = (team1score1 + team1score2 + team1score3) / 3;
+var calcAverage = (a, b, c) => {
+    const team1score = (a + b + c) / 3;
     return team1score;
 }
 const avgDolphins = calcAverage(
@@ -37,12 +37,7 @@ const avgDolphins = calcAverage(
     Number(prompt("Enter Dolphins Round two Score")),
     Number(prompt("Enter Dolphins Round three Score")),
 );
-
-var calcAvg2 = (team2score1, team2score2, team2score3) => {
-    const team2score = (team2score1 + team2score2 + team2score3) / 3;
-    return team2score;
-}
-const avgKoalas = calcAvg2(
+const avgKoalas = calcAverage(
     Number(prompt("Enter Kolas Round One Score")),
     Number(prompt("Enter Kolas Round Two Score")),
     Number(prompt("Enter Kolas Round Three Score"))
@@ -53,8 +48,10 @@ function checkWinner(avgDolphins, avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= 2 * avgDolphins) {
         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
+    } else if (avgDolphins !== typeof Number && avgKoalas !== typeof Number) {
+        return `Please enter valid scores`;
     } else {
-        return "No team wins...";
+        return `No team wins...`;
     }
 }
 
