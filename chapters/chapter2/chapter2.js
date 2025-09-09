@@ -103,10 +103,13 @@ const mobileNameAndWarranty3 = (buyYear3, timeUsedInYears3, naam3) => {
     const warrantyLeft3 = warrantyTime3 - timeUsedInYears3;
 
     var howMonths3 = warrantyMonths3(warrantyLeft3)
-    if (howMonths3 > 0)
+    if (howMonths3 > 0) {
         return `${naam3} warranty left only ${howMonths3} months`;
-
-    else {
+    }
+    else if (buyYear3 !== typeof number && timeUsedInYears3 !== typeof number) {
+        return `enter valid data only in maths`
+    }
+    else if (howMonths3 <= 0) {
         return `${naam3} warranty is already expired`;
     }
 }
