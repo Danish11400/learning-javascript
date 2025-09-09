@@ -1,4 +1,4 @@
-![📄 View image](./images/) 
+![📄 View image](./images) 
 ### it is format
 
 
@@ -131,6 +131,11 @@ const hi3 = mobileNameAndWarranty(2023, 1, "poco");
 console.log(hi3)
 ```
 **look here i write many parameters and also many lines of code here**
+
+
+### Class6 - of - chapter2 - Functions Calling Other Functions
+![📄 View image](./images/class6-chapter2_1.jpg) 
+
 
 
 
