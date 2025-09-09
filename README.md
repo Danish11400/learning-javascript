@@ -188,6 +188,11 @@ const hi321 = mobileNameAndWarranty3(prompt(`enter buying year`), prompt(`enter 
 console.log(hi321);
 ```
 
+### Class 8 to 9 - of - chapter2 - Challenge5
+*i have done it this challenge in my challenge folder*
+
+
+
 
 
 
