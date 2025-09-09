@@ -29,7 +29,7 @@ TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.*/
 
 
 var calcAverage = (a, b, c) => {
-    const avgscore = (a + b + c) / 3; /
+    const avgscore = (a + b + c) / 3;
     return avgscore;
 }
 const avgDolphins = calcAverage(
