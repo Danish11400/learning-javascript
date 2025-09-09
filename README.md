@@ -1,5 +1,6 @@
-![📄 View image](./images) 
 ### it is format
+![📄 View image](./images) 
+
 
 
 
@@ -135,6 +136,55 @@ console.log(hi3)
 
 ### Class6 - of - chapter2 - Functions Calling Other Functions
 ![📄 View image](./images/class6-chapter2_1.jpg) 
+- or another example is 
+```
+var warrantyMonths = function (inMonths) {
+    return inMonths * 12;
+}
+
+const mobileNameAndWarranty2 = (buyYear1, timeUsedInYears1, naam1) => {
+    const warrantyTime1 = 2025 - buyYear1;
+    const warrantyLeft1 = warrantyTime1 - timeUsedInYears1;
+
+    var howMonths = warrantyMonths(warrantyLeft1)
+
+
+    return `${naam1} warranty left only ${howMonths} months`;
+}
+const hi32 = mobileNameAndWarranty2(2023, 1.5, "poco m4 pro 5G");
+console.log(hi32)
+```
+## look how calling function from another function works
+![📄 View image](./images/calling.png) 
+
+### Class7 - of - chapter2 - Function Reviewing
+![📄 View image](./images/class7-chapter2_1.jpg) 
+ - another example is her bro...
+```
+var warrantyMonths3 = function (inMonths) {
+    return inMonths * 12;
+}
+
+
+const mobileNameAndWarranty3 = (buyYear3, timeUsedInYears3, naam3) => {
+
+
+
+    const warrantyTime3 = 2025 - buyYear3;
+    const warrantyLeft3 = warrantyTime3 - timeUsedInYears3;
+
+    var howMonths3 = warrantyMonths3(warrantyLeft3)
+    if (howMonths3 > 0)
+        return `${naam3} warranty left only ${howMonths3} months`;
+
+    else {
+        return `${naam3} warranty is already expired`;
+    }
+}
+const hi321 = mobileNameAndWarranty3(prompt(`enter buying year`), prompt(`enter how many years u used it`), prompt(`enter name of ur device`));
+console.log(hi321);
+```
+
 
 
 

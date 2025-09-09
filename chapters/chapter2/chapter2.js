@@ -56,30 +56,62 @@ const mobileNameAndWarranty = (buyYear, timeUsedInYears, naam) => {
     return `${naam} warranty left only ${warrantyLeft} years`;
 }
 const hi3 = mobileNameAndWarranty(2023, 1.4, "poco");
-console.log(hi3)
+console.log(hi3);
 
 
 // Class6 - of - chapter2 - Functions Calling Other Functions
 
-var warrantyMonths = function (inMonths) {
+var warrantyMonths3 = function (inMonths) {
     return inMonths * 12;
 }
 
 
-const mobileNameAndWarranty2 = (buyYear1, timeUsedInYears1, naam1) => {
+const mobileNameAndWarranty2 = (buyYear3, timeUsedInYears3, naam3) => {
 
 
 
-    const warrantyTime1 = 2025 - buyYear1;
-    const warrantyLeft1 = warrantyTime1 - timeUsedInYears1;
+    const warrantyTime3 = 2025 - buyYear3;
+    const warrantyLeft3 = warrantyTime3 - timeUsedInYears3;
 
-    var howMonths = warrantyMonths(warrantyLeft1)
+    var howMonths3 = warrantyMonths3(warrantyLeft3)
 
 
-    return `${naam1} warranty left only ${howMonths} months`;
+    return `${naam3} warranty left only ${howMonths3} months`;
 }
 const hi32 = mobileNameAndWarranty2(2023, 1.5, "poco m4 pro 5G");
-console.log(hi32)
+console.log(hi32);
+
+
+// Class7 - of - chapter2 - Function Reviewing
+
+
+// let buyYear3 = prompt(`enter buying year`);
+// let timeUsedInYears3 = prompt(`how many years u used it`);
+// let naam3 = prompt(`name of ur device`);
+
+
+var warrantyMonths3 = function (inMonths) {
+    return inMonths * 12;
+}
+
+
+const mobileNameAndWarranty3 = (buyYear3, timeUsedInYears3, naam3) => {
+
+
+
+    const warrantyTime3 = 2025 - buyYear3;
+    const warrantyLeft3 = warrantyTime3 - timeUsedInYears3;
+
+    var howMonths3 = warrantyMonths3(warrantyLeft3)
+    if (howMonths3 > 0)
+        return `${naam3} warranty left only ${howMonths3} months`;
+
+    else {
+        return `${naam3} warranty is already expired`;
+    }
+}
+const hi321 = mobileNameAndWarranty3(prompt(`enter buying year`), prompt(`enter how many years u used it`), prompt(`enter name of ur device`));
+console.log(hi321);
 
 
 
