@@ -69,7 +69,7 @@ console.log(winner);
 
 
 
-// adding my extra 
+// adding my extra
 
 //making calculator using switch operator
 
@@ -99,13 +99,32 @@ switch (operator) {
 
 /// making calculator using condition operator
 
-const num12 = Number(prompt("Enter the first number:"));
+/*const num12 = Number(prompt("Enter the first number:"));
 const operator12 = prompt("Enter an operator (+, -, *, /):");
 const num22 = Number(prompt("Enter the second number:"));
 
 operator12 === "+" ? console.log(`your sum result is`, num12 + num22) :
-    operator12 === "-" ? console.log(`youe subtract result is`, num12 - num22) :
-        operator12 === "/" ? console.log(`your divide is`, num12 / num22) :
-            operator12 === "*" ? console.log(`your multiplication is`, num12 * num22) :
-                console.log("Invalid operator");
+operator12 === "-" ? console.log(`youe subtract result is`, num12 - num22) :
+operator12 === "/" ? console.log(`your divide is`, num12 / num22) :
+operator12 === "*" ? console.log(`your multiplication is`, num12 * num22) :
+                console.log("Invalid operator");*/
+
+// doing it by if else operator
+
+const num1 = Number(prompt("Enter the first number:"));
+const operator = prompt("Enter an operator (+, -, *, /):");
+const num2 = Number(prompt("Enter the second number:"));
+
+if (operator === "+") {
+    console.log(`your sum result is`, num1 + num2);
+} else if (operator === "-") {
+    console.log(`youe subtract result is`, num1 - num2);
+} else if (operator === "/") {
+    console.log(`your divide is`, num1 / num2);
+} else if (operator === "*") {
+    console.log(`your multiplication is`, num1 * num2);
+} else {
+    console.log("Invalid operator");
+}
+
 
