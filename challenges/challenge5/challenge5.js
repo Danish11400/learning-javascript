@@ -73,7 +73,7 @@ console.log(winner);
 
 //making calculator using switch operator
 
-/*
+
 const num1 = Number(prompt("Enter the first number:"));
 const operator = prompt("Enter an operator (+, -, *, /):");
 const num2 = Number(prompt("Enter the second number:"));
@@ -92,37 +92,39 @@ switch (operator) {
     case "*":
         console.log(`your multiplication is`, num1 * num2);
         break;
+    default:
+        console.log(`invalid operator`);
 }
-*/
+
 
 
 
 /// making calculator using condition operator
 
-/*const num12 = Number(prompt("Enter the first number:"));
+const num12 = Number(prompt("Enter the first number:"));
 const operator12 = prompt("Enter an operator (+, -, *, /):");
 const num22 = Number(prompt("Enter the second number:"));
 
 operator12 === "+" ? console.log(`your sum result is`, num12 + num22) :
-operator12 === "-" ? console.log(`youe subtract result is`, num12 - num22) :
-operator12 === "/" ? console.log(`your divide is`, num12 / num22) :
-operator12 === "*" ? console.log(`your multiplication is`, num12 * num22) :
-                console.log("Invalid operator");*/
+    operator12 === "-" ? console.log(`youe subtract result is`, num12 - num22) :
+        operator12 === "/" ? console.log(`your divide is`, num12 / num22) :
+            operator12 === "*" ? console.log(`your multiplication is`, num12 * num22) :
+                console.log("Invalid operator");
 
 // doing it by if else operator
 
-const num1 = Number(prompt("Enter the first number:"));
-const operator = prompt("Enter an operator (+, -, *, /):");
-const num2 = Number(prompt("Enter the second number:"));
+const num13 = Number(prompt("Enter the first number:"));
+const operator13 = prompt("Enter an operator (+, -, *, /):");
+const num23 = Number(prompt("Enter the second number:"));
 
-if (operator === "+") {
-    console.log(`your sum result is`, num1 + num2);
-} else if (operator === "-") {
-    console.log(`youe subtract result is`, num1 - num2);
-} else if (operator === "/") {
-    console.log(`your divide is`, num1 / num2);
-} else if (operator === "*") {
-    console.log(`your multiplication is`, num1 * num2);
+if (operator13 === "+") {
+    console.log(`your sum result is`, num13 + num23);
+} else if (operator13 === "-") {
+    console.log(`youe subtract result is`, num13 - num23);
+} else if (operator13 === "/") {
+    console.log(`your divide is`, num13 / num23);
+} else if (operator13 === "*") {
+    console.log(`your multiplication is`, num13 * num23);
 } else {
     console.log("Invalid operator");
 }
