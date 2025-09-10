@@ -53,8 +53,7 @@ function checkWinner(avgDolphins, avgKoalas) {
         return `Dolphins win (${avgDolphins} vs. ${avgKoalas})`;
     } else if (avgKoalas >= 2 * avgDolphins) {
         return `Koalas win (${avgKoalas} vs. ${avgDolphins})`;
-    }
-    else {
+    } else {
 
         return `No team wins...`;
     }
@@ -68,4 +67,26 @@ console.log(winner);
 
 // NOTE NAN IS ALWAYS TYPEOF NUMBER BUT NAN IS NOT A NUMBER
 
+
+
+// adding my extra 
+const num1 = Number(prompt("Enter the first number:"));
+const operator = prompt("Enter an operator (+, -, *, /):");
+const num2 = Number(prompt("Enter the second number:"));
+
+switch (operator) {
+    case "+":
+        console.log(`your sum result is`, num1 + num2);
+        break;
+
+    case "-":
+        console.log(`youe subtract result is`, num1 - num2);
+        break;
+    case "/":
+        console.log(`your divide is`, num1 / num2);
+        break;
+    case "*":
+        console.log(`your multiplication is`, num1 * num2);
+        break;
+}
 
