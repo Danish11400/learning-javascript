@@ -201,6 +201,13 @@ console.log(hi321);
 ![📄 View image](./images/class11-chapter2_2.jpg) 
 
 
+## class12 & 13 - of - chapter2 - Is a Challenge
+*done in my challenges folder in challenge6*
+
+
+
+
+
 
 
 
