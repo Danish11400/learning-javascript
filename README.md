@@ -206,11 +206,15 @@ console.log(hi321);
 
 
 ### Class14 - of - Chapter2 - Introduction to Objects
-![📄 View image](./images/class14-chapter2_1.jpg) 
+![📄 View image](./images/class14-chapter2_1.jpg) +
 
 
-
-
+### Class15 - of - chapter2 - Dot vs Bracket Notation
+![📄 View image](./images/class15-chapter2_1.jpg) 
+![📄 View image](./images/class15-chapter2_2.jpg) 
+![📄 View image](./images/class15-chapter2_3.jpg) 
+**result**
+![📄 View image](./images/Screenshot%202025-09-25%20160759.png) 
 
 
 

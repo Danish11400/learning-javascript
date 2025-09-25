@@ -64,6 +64,8 @@ console.log(hi3);
 
 // Class6 - of - chapter2 - Functions Calling Other Functions
 
+
+
 var warrantyMonths3 = function (inMonths) {
     return inMonths * 12;
 }
@@ -84,13 +86,15 @@ const mobileNameAndWarranty2 = (buyYear3, timeUsedInYears3, naam3) => {
 const hi32 = mobileNameAndWarranty2(2023, 1.5, "poco m4 pro 5G");
 console.log(hi32);
 
+*/
+
 
 // Class7 - of - chapter2 - Function Reviewing
 
-
-// let buyYear3 = prompt(`enter buying year`);
-// let timeUsedInYears3 = prompt(`how many years u used it`);
-// let naam3 = prompt(`name of ur device`);
+/*
+let buyYear3 = prompt(`enter buying year`);
+let timeUsedInYears3 = prompt(`how many years u used it`);
+let naam3 = prompt(`name of ur device`);
 
 
 var warrantyMonths3 = function (inMonths) {
@@ -118,7 +122,7 @@ console.log(hi321);
 
 // Class 8 to 9 - of - chapter2 - Challenge5
 //i have done it this challenge in my challenge folder
-*/
+
 
 // Class10 - of chapter2 - introduction to Array
 
@@ -131,7 +135,7 @@ const hello342 = "introvert";
 const newly = [hello342, "danish", 2025 - 2007, months];
 console.log(newly);
 
-
+*/
 // Class11 - of - chapter2 - Basic Array Operations
 
 // 1. push();
@@ -171,12 +175,37 @@ console.log(hi);
 var objectsExample = ["Danish", "Nisar", 2025 - 2007, "Game developer"];
 
 var objectsRealUseCase = {
-    firstname: "Danish",
-    lastname: "Nisar",
+    firstName: "Danish",
+    lastName: "Nisar",
     age: 2025 - 2007,
-    profession: "Game Developer"
+    profession: "Game Developer",
+    favouriteCountry: "Japan"
 }
 console.log(objectsRealUseCase);
+
+
+//  Class15 - of - chapter2 - Dot vs Bracket Notation
+
+
+console.log(objectsRealUseCase.firstName);
+console.log(objectsRealUseCase.age);
+console.log(objectsRealUseCase["firstName"]);
+const motupatlu = "Country";
+console.log(objectsRealUseCase["favourite" + motupatlu]);
+
+
+
+objectsRealUseCase.location = "kashmir";
+objectsRealUseCase["preferredCompany"] = "Amazon";
+console.log(objectsRealUseCase);
+
+// Random Challenge
+
+const things0 = ["Boat bluetooth", "Noise headset", "Airpods"];
+console.log(`${objectsRealUseCase.firstName} has ${[things0.length]} bluetooth devices and his favourite one is ${things0[1]}`);
+
+
+
 
 
 
