@@ -159,7 +159,7 @@ console.log(hi32)
 
 ### Class7 - of - chapter2 - Function Reviewing
 ![📄 View image](./images/class7-chapter2_1.jpg) 
- - another example is her bro...
+ - another example is here bro...
 ```
 var warrantyMonths3 = function (inMonths) {
     return inMonths * 12;
@@ -194,6 +194,11 @@ console.log(hi321);
 ### Class10 - of chapter2 - introduction to Array
 ![📄 View image](./images/class10-%20chapter2_1.jpg) 
 ![📄 View image](./images/class10-%20chapter2_2.jpg) 
+
+
+### Class11 - of - chapter2 - Basic Array Operations
+![📄 View image](./images/class11-chapter2_1.jpg) 
+![📄 View image](./images/class11-chapter2_2.jpg) 
 
 
 

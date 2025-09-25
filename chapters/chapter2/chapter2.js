@@ -132,6 +132,42 @@ const newly = [hello342, "danish", 2025 - 2007, months];
 console.log(newly);
 
 
+// Class11 - of - chapter2 - Basic Array Operations
+
+// 1. push();
+
+const friends = ["jai", "aabid", "fan"];
+const hi001 = friends.push("keyboard");
+console.log(hi001);
+console.log(friends);
+
+
+// 2. unshift();
+
+const hi0 = friends.unshift("mouse");
+console.log(hi0);
+console.log(friends);
+
+
+// pop();
+
+const hi2 = friends.pop();
+console.log(hi2);
+console.log(friends);
+
+
+// shift();
+
+const hi = friends.shift();
+console.log(friends);
+console.log(hi);
+
+
+// class12 & 13 - of - chapter2 - Is a Challenge 
+
+
+
+
 
 
 
