@@ -163,8 +163,20 @@ console.log(friends);
 console.log(hi);
 
 
-// class12 & 13 - of - chapter2 - Is a Challenge 
+// class12 & 13 - of - chapter2 - Is a Challenge
 
+
+// Class14 - of - Chapter2 - Introduction to Objects
+
+var objectsExample = ["Danish", "Nisar", 2025 - 2007, "Game developer"];
+
+var objectsRealUseCase = {
+    firstname: "Danish",
+    lastname: "Nisar",
+    age: 2025 - 2007,
+    profession: "Game Developer"
+}
+console.log(objectsRealUseCase);
 
 
 
