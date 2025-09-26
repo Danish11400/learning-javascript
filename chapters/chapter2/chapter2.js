@@ -206,7 +206,7 @@ const things0 = ["Boat bluetooth", "Noise headset", "Airpods"];
 console.log(`${objectsRealUseCase.firstName} has ${[things0.length]} bluetooth devices and his favourite one is ${things0[1]}`);
 
 
-// Class15 - of - Chapter2 - Object Methods
+// Class16 - of - Chapter2 - Object Methods
 
 
 const danish0 = {
