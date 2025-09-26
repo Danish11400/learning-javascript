@@ -177,6 +177,7 @@ var objectsExample = ["Danish", "Nisar", 2025 - 2007, "Game developer"];
 var objectsRealUseCase = {
     firstName: "Danish",
     lastName: "Nisar",
+    birthYear22: 2024,
     age: 2025 - 2007,
     profession: "Game Developer",
     favouriteCountry: "Japan"
@@ -205,13 +206,22 @@ const things0 = ["Boat bluetooth", "Noise headset", "Airpods"];
 console.log(`${objectsRealUseCase.firstName} has ${[things0.length]} bluetooth devices and his favourite one is ${things0[1]}`);
 
 
+// Class15 - of - Chapter2 - Object Methods
 
 
-
-
-
-
-
-
+const danish0 = {
+    // calcAge: function (birthyear33) {
+    //     return 2025 - birthyear33;
+    // }
+    birthYear223: 2007,
+    calcAge: function () {
+        this.age = 2025 - this.birthYear223
+        return this.age;
+    }
+};
+console.log(danish0.calcAge());
+console.log(danish0.age);
+console.log(danish0.age);
+console.log(danish0.age);
 
 

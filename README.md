@@ -218,6 +218,11 @@ console.log(hi321);
 
 
 
+### Class15 - of - Chapter2 - Object Methods
+![📄 View image](./images/class16-chapter2_1.jpg)
+![📄 View image](./images/class16-chapter2_2.jpg)
+![📄 View image](./images/class16-chapter2_3.jpg)
+
 
 
 
