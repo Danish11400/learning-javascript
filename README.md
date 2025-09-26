@@ -224,6 +224,12 @@ console.log(hi321);
 ![📄 View image](./images/class16-chapter2_3.jpg)
 
 
+### Class 17 to 18 - of - chapter2 - challenge7
+**already done in my challenge folder**
+
+
+### Class19 - of - chapter2 - Iteration Of For Loop
+![📄 View image](./images/class19-chapter2_1.jpg)
 
 
 

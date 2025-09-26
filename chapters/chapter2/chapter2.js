@@ -225,3 +225,12 @@ console.log(danish0.age);
 console.log(danish0.age);
 
 
+// Class 17 to 18 - of - chapter2 - challenge7
+
+
+// Class19 - of - chapter2 - Iteration Of For Loop
+
+for (hi7 = 1; hi7 <= 100; hi7++) {
+    console.log(`weight lifting repetations${hi7} 👊`);
+};
+
