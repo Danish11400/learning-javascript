@@ -274,3 +274,10 @@ for (exercise = 1; exercise < 4; exercise++) {
         console.log(`LIFTING WEIGHT REPETATIONS 👆 ${a} `);
     }
 }
+
+// Class22 - of - chapter2 - While loop
+let hero = 1;
+while (hero <= 10) {
+    console.log(`hello brother${hero}`);
+    hero++;
+}

@@ -242,6 +242,6 @@ console.log(hi321);
 ![📄 View image](./images/class21-chapter2_2.jpg)
 
 
-
-
+### Class22 - of - chapter2 - While loop
+![📄 View image](./images/class22-chapter2_1.jpg)
 
