@@ -234,3 +234,28 @@ for (hi7 = 1; hi7 <= 100; hi7++) {
     console.log(`weight lifting repetations${hi7} 👊`);
 };
 
+
+// Class20 - of - chapter2 - Looping Arrays, Breaking and Continuing
+
+const antSports = ["danish", "web developer", 2025 - 2007, ["jai", "suhail", "aabid"], "UAE"];
+for (i = 0; i < antSports.length; i++) {
+    if (typeof antSports[i] !== "string") continue;
+    console.log(antSports[i], typeof antSports[i]);
+}
+
+console.log("----CONTINUE EXAMPLE-----");
+
+
+const years = [1991, 2007, 1969, 2020];
+const age = [];
+for (let i = 0; i < years.length; i++) {
+    age.push(2025 - years[i]);
+}
+console.log(age);
+
+
+console.log("-----BREAK EXAMPLE-----");
+for (i = 0; i < antSports.length; i++) {
+    if (typeof antSports[i] !== "string") break;
+    console.log(antSports[i]);
+}

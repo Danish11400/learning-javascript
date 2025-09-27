@@ -232,6 +232,10 @@ console.log(hi321);
 ![📄 View image](./images/class19-chapter2_1.jpg)
 
 
+### Class20 - of - chapter2 - Looping Arrays, Breaking and Continuing
+![📄 View image](./images/class20-chapter2_1.jpg)
+![📄 View image](./images/class20-chapter2_2.jpg)
+![📄 View image](./images/class20-chapter2_3.jpg)
 
 
 
