@@ -259,3 +259,18 @@ for (i = 0; i < antSports.length; i++) {
     if (typeof antSports[i] !== "string") break;
     console.log(antSports[i]);
 }
+
+// Class21 - of - chapter2 - LoopingBackwards And Loops In Loops
+for (i = antSports.length - 1; i >= 0; i--) {
+    console.log(antSports[i]);
+}
+
+
+
+for (exercise = 1; exercise < 4; exercise++) {
+    console.log(`------STARTING EXERCISE ${exercise}`);
+
+    for (let a = 1; a <= 5; a++) {
+        console.log(`LIFTING WEIGHT REPETATIONS 👆 ${a} `);
+    }
+}

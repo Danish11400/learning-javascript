@@ -237,6 +237,9 @@ console.log(hi321);
 ![📄 View image](./images/class20-chapter2_2.jpg)
 ![📄 View image](./images/class20-chapter2_3.jpg)
 
+### Class21 - of - chapter2 - LoopingBackwards And Loops In Loops
+![📄 View image](./images/class21-chapter2_1.jpg)
+![📄 View image](./images/class21-chapter2_2.jpg)
 
 
 
