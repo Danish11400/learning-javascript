@@ -1,7 +1,7 @@
-// Class1-2 - of - chapter4 -intros
-
+// Class1-2 - of - chapter4 -intrs
+o;
 // Class3 - of - chapter4 - setting up prettier extension
-"use strict";
+("use strict");
 
 const hello = 23;
 if (hello === 23) {
