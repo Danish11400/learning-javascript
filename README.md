@@ -266,4 +266,6 @@ _done in my challenges folder in challenge6_
 
 _are just intos of chapter 4_
 
-### Class3 - of - chapter4 - setting up prettier
+### Class3 - of - chapter4 - setting up prettier extension
+
+_also nothing in this video just tells how to set up prettier extension_
