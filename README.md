@@ -280,3 +280,7 @@ _and nothing important_
 ### Class5 - of - chapter4 - Learning How to Code
 
 **just motivation in this class Class5 to whole chapter- of - chapter4 - Learning How to Code. Just motivation in this chapter, settings, debugging, ai assistance in coding**
+
+### Chapter5
+
+**is just about html and css for those who dont know about html and css but we already know**
