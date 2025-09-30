@@ -245,3 +245,8 @@ console.log(hi321);
 ### Class22 - of - chapter2 - While loop
 ![📄 View image](./images/class22-chapter2_1.jpg)
 
+
+#### Chapter3 starts
+**chapter3 is just the roadmap of this jscourse**
+
+
