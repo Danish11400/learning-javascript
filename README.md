@@ -266,7 +266,7 @@ _done in my challenges folder in challenge6_
 
 ### class1-2 - of - chapter4
 
-_are just intos of chapter 4_
+_are just intros of chapter 4_
 
 ### Class3 - of - chapter4 - setting up prettier extension
 
