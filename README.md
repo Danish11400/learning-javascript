@@ -278,3 +278,5 @@ _also nothing in this video just tells how to set up prettier extension_
 _and nothing important_
 
 ### Class5 - of - chapter4 - Learning How to Code
+
+**just motivation in this class Class5 to whole chapter- of - chapter4 - Learning How to Code. Just motivation in this chapter, settings, debugging, ai assistance in coding**

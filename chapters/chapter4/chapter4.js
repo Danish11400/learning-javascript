@@ -1,5 +1,4 @@
-// Class1-2 - of - chapter4 -intrs
-o;
+// Class1-2 - of - chapter4 -intros
 // Class3 - of - chapter4 - setting up prettier extension
 ("use strict");
 
@@ -11,4 +10,5 @@ if (hello === 23) {
 // Class4 - of - chapter4 - Installing Node.js and Setting Up a Dev Environment
 // nothing important just telling us how to install live server
 
-//Class5 - of - chapter4 - Learning How to Code
+//Class5 to whole chapter- of - chapter4 - Learning How to Code
+// Just motivation in this chapter, settings, debugging, ai assistance in coding
