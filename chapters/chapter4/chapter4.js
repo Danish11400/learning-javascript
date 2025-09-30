@@ -12,6 +12,3 @@ if (hello === 23) {
 
 //Class5 to whole chapter- of - chapter4 - Learning How to Code
 // Just motivation in this chapter, settings, debugging, ai assistance in coding
-
-/* Chapter5
-is just about html and css for those who dont know about html and css but we already know*/
