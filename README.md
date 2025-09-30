@@ -262,6 +262,8 @@ _done in my challenges folder in challenge6_
 
 #### Chapter4 starts
 
+**i think this chapter is just about settings of vs code**
+
 ### class1-2 - of - chapter4
 
 _are just intos of chapter 4_
@@ -269,3 +271,10 @@ _are just intos of chapter 4_
 ### Class3 - of - chapter4 - setting up prettier extension
 
 _also nothing in this video just tells how to set up prettier extension_
+
+### Class4 - of - chapter4 - Installing Node.js and Setting Up a Dev Environment
+
+**in this telling is how to install live server**
+_and nothing important_
+
+### Class5 - of - chapter4 - Learning How to Code
