@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="show-model">Show Model 1</div>
+      <div class="show-model">Show Model 2</div>
+      <div class="show-model">Show Model 3</div>
+    </header>
+    <div class="hidden-center">
+      <div class="model hidden">
+        <button class="close-model">&times;</button>
+        <h1>I a'm a Model window</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sapiente
+          sint reprehenderit veritatis, accusantium sequi mollitia dolorum
+          commodi iusto earum ipsum amet tenetur numquam cumque, itaque
+          voluptatem optio, quidem velit. Modi aliquid repudiandae doloremque
+          nesciunt dicta amet recusandae odit, quia sit? Atque error porro
+          nobis, beatae at ut impedit? Laborum deserunt tempore alias ad quasi
+          laboriosam architecto? Non, ratione! Tempora!
+        </p>
+      </div>
+    </div>
+    <style>
+      body {
+        background-color: rgb(103, 168, 5);
+      }
+      header {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3rem;
+      }
+      .show-model {
+        box-sizing: border-box;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .hidden-center {
+        display: flex;
+        justify-content: center;
+      }
+      .hidden {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        width: 400px;
+        height: 500px;
+        margin-top: 100px;
+        display: none;
+      }
+      .hidden p {
+        font-size: 1.3rem;
+        padding-left: 8px;
+        padding-right: 5px;
+      }
+    </style>
+    <script src="project2.js"></script>
+  </body>
+</html>

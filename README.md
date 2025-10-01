@@ -287,7 +287,7 @@ _and nothing important_
 
 ### chapter6
 
-### class 1 to 5 only intros
+### class 1 to 11 - projec1(Guess My Number)
 
 _projec1 html code_
 
@@ -462,3 +462,5 @@ _now js_
 ![📄 View image](./images/class1-11_%20chapter6_5.jpg)
 ![📄 View image](./images/class1-11_%20chapter6_6.jpg)
 ![📄 View image](./images/class1-11_%20chapter6_7.jpg)
+
+### class 12 to 14 - projec2(Model Window)
