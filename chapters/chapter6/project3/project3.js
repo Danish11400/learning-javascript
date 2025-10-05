@@ -178,3 +178,11 @@ function resetGame() {
   player1Style.style.backgroundColor = "rgba(255, 255, 255, 0.63)";
   player2Style.style.backgroundColor = "rgba(255, 255, 255, 0.47)";
 }
+let clickmeforRules = document.querySelector(".rule");
+clickmeforRules.addEventListener("click", function () {
+  document.querySelector(".rule-book").classList.remove("hide-pop-up");
+});
+let clickmeforExitRules = document.querySelector(".exit-btn");
+clickmeforExitRules.addEventListener("click", function () {
+  document.querySelector(".rule-book").classList.add("hide-pop-up");
+});

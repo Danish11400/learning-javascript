@@ -10,6 +10,7 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
 .two-section {
   display: flex;
@@ -107,13 +108,67 @@ body {
 .hidden {
   display: none;
 }
+.rule-book {
+  background: #1cd8d2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #93edc7,
+    #1cd8d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 300px;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 30px;
+  position: absolute;
+}
+.rule-book p {
+  font-style: italic;
+  font-size: 1.3rem;
+  padding-left: 5px;
+}
+.rule {
+  position: absolute;
+  top: 50px;
+  left: 110px;
+  background-color: rgba(255, 255, 255, 0.54);
+  border-radius: 20px;
+  width: 99px;
+  height: 50px;
+  align-items: center;
+  padding-left: 6px;
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.hide-pop-up {
+  display: none;
+}
+.exit-btn {
+  margin-top: 30px;
+}
 
 @media (max-width: 500px) {
+  .player-left,
+  .player-right {
+    width: 400px; /* already done */
+    height: 600px; /* let height shrink */
+  }
   .center-line {
     display: grid;
     grid-template-areas:
       "a b c"
-      ". d.";
+      "e d.";
     justify-content: space-around;
     position: static;
     width: 100vw; /* Full width on mobile */
@@ -125,7 +180,7 @@ body {
     margin-top: 12px; /* Optional: space below bar */
     margin-left: 2px;
 
-    margin-bottom: 200px;
+    margin-bottom: -10px;
   }
   #reset {
     grid-area: a;
@@ -146,6 +201,13 @@ body {
     height: 100px;
     margin-bottom: -12px;
   }
+  .rule {
+    margin-top: 20px;
+    margin-left: -89px;
+    font-size: 1rem;
+    height: 30px;
+    width: 66px;
+  }
 
   .center-line h1 {
     width: 28vw; /* Buttons nearly as wide as screen */
@@ -155,7 +217,17 @@ body {
   }
   .two-section {
     width: 100vw;
-    height: 360px;
+    height: 600px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* minimum height */
+    height: auto;
+    margin-top: 100px;
   }
   .left-top-section h1,
   .right-top-section h1 {
