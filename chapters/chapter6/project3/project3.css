@@ -146,27 +146,22 @@ body {
   display: none;
 }
 .rule-book {
-  background: #1cd8d2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #93edc7,
-    #1cd8d2
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #93edc7,
-    #1cd8d2
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1cd8d2;
+  background: linear-gradient(to right, #93edc7, #1cd8d2);
   width: 300px;
   height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
-  margin-left: 30px;
-  position: absolute;
+
+  position: fixed; /* change from absolute to fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* very high to ensure it's on top */
 }
+
 .rule-book p {
   font-style: italic;
   font-size: 1.3rem;
@@ -175,7 +170,7 @@ body {
 .rule {
   position: absolute;
   top: 50px;
-  left: 110px;
+  left: 200px;
   background-color: rgba(255, 255, 255, 0.54);
   border-radius: 20px;
   width: 99px;
@@ -187,6 +182,7 @@ body {
   font-size: 2rem;
   color: black;
   font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 1001;
 }
 .hide-pop-up {
   display: none;
