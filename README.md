@@ -464,3 +464,150 @@ _now js_
 ![📄 View image](./images/class1-11_%20chapter6_7.jpg)
 
 ### class 12 to 14 - projec2(Model Window)
+
+**Html code**
+
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Anek+Telugu:wght@100..800&family=Aoboshi+One&family=Are+You+Serious&family=Astloch:wght@400;700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Federant&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Forum&family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Shadows+Into+Light&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="show-case">
+      <button class="show-model">Show Model 1</button>
+      <button class="show-model">Show Model 2</button>
+      <button class="show-model">Show model 3</button>
+    </div>
+    <div class="hidden">
+      <div class="hidden-model-styles">
+        <button class="cross-btn">&times;</button>
+        <h1>Hey Hi I a'm a Model Window 🥰</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, pariatur
+          voluptatibus? Ratione voluptate alias ullam possimus atque eius, nam
+          eaque similique rem iure a eveniet velit reiciendis, impedit soluta
+          vel. Eveniet iste expedita dolorem dolor aliquid incidunt non, fugiat
+          quasi ipsam tempora tempore nihil. Asperiores ad explicabo iste
+          mollitia laborum doloremque dolores, obcaecati adipisci ea sequi
+          voluptatibus. Ex, quo consequatur. Quidem laborum rem, aperiam,
+          officiis quae aliquam nam dignissimos incidunt magni voluptate velit
+          in nostrum! Modi quis eveniet error, nisi, culpa quas cumque
+          praesentium aperiam, ex esse architecto dolorem inventore.
+        </p>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <link rel="stylesheet" href="project2.css" />
+    <script src="project2.js"></script>
+  </body>
+</html>
+
+```
+
+**css code**
+
+```
+body {
+  color: white;
+  background: linear-gradient(to right, #0054b4, #40e0d0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.show-case {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.show-model {
+  border: none;
+  text-decoration: none;
+  font-size: 4rem;
+  border-radius: 30%;
+  padding: 8px 16px; /* 10px top/bottom, 5px left/right */
+}
+.hidden-model-styles {
+  display: flex;
+  flex-direction: column;
+  background-color: #6617cb;
+  background-image: linear-gradient(315deg, #6617cb 0%, #cb218e 74%);
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden-model-styles p {
+  font-size: 1.6rem;
+  padding-left: 5px;
+  font-family: Shadows Into Light;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dim effect */
+  backdrop-filter: blur(5px); /* blur effect */
+  z-index: 1;
+}
+
+```
+
+**js-code**
+
+```
+"use strict;";
+const openBtn = document.querySelectorAll(".show-model");
+const hiddenDiv = document.querySelector(".hidden");
+const overlay = document.querySelector(".overlay");
+const addinghidden = function () {
+  hiddenDiv.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+const removeHidden = function () {
+  hiddenDiv.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+
+for (let i = 0; i < openBtn.length; i++) {
+  openBtn[i].addEventListener("click", function () {
+    removeHidden();
+  });
+}
+const showNow = document.querySelector(".cross-btn");
+showNow.addEventListener("click", function () {
+  addinghidden();
+});
+document.addEventListener("keydown", function (hi) {
+  if (hi.key === "Escape") {
+    if (!hiddenDiv.classList.contains("hidden")) {
+      addinghidden();
+    }
+  }
+});
+
+```
+
+![📄 View image](./images/class12-14_chapter6_1.jpg)
+![📄 View image](./images/class12-14_chapter6_2.jpg)
+![📄 View image](./images/class12-14_chapter6_3.jpg)
