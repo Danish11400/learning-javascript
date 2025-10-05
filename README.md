@@ -611,3 +611,121 @@ document.addEventListener("keydown", function (hi) {
 ![📄 View image](./images/class12-14_chapter6_1.jpg)
 ![📄 View image](./images/class12-14_chapter6_2.jpg)
 ![📄 View image](./images/class12-14_chapter6_3.jpg)
+
+_IMPORTANT THINGS LEARNED IN THESE TWO PROJECTS_
+
+Project 1: Guess the Number Game
+
+New things / important points learned:
+
+DOM Manipulation
+
+document.querySelector() → select elements
+
+.textContent → change text
+
+.style → change CSS dynamically
+
+Event Listeners
+
+.addEventListener("click", function(){}) → run JS when a button is clicked
+
+Functions for Reusability
+
+Created helper functions like displaymessage(), displaynumber(), displayscore()
+
+Keeps code clean and avoids repetition
+
+Random Numbers
+
+Math.random() + Math.trunc() → generate secret number
+
+Learned how to set a range (1–30)
+
+Conditional Logic
+
+if, else if, else to handle:
+
+no input
+
+too high / too low
+
+correct guess
+
+game over
+
+Dynamic Styling
+
+Change body color based on win/loss
+
+Change .number width dynamically
+
+Score / Highscore Logic
+
+Keep track of score
+
+Compare score to highscore and update
+
+Resetting the Game
+
+Clicking “Again” button resets all variables and UI elements
+
+Takeaway: Learned how to combine DOM manipulation, events, random numbers, conditional logic, and dynamic styling to create an interactive game.
+
+Project 2: Modal Popup
+
+New things / important points learned:
+
+Multiple Element Selection
+
+document.querySelectorAll() → select multiple buttons
+
+Loop through them with for to add event listeners
+
+Showing / Hiding Elements
+
+.classList.add("hidden") and .classList.remove("hidden") → toggle visibility
+
+Overlay / Focus Logic
+
+Learned why overlay is needed for UX (blocks background, dim effect)
+
+Both modal and overlay always toggle together
+
+Event Handling for Different Actions
+
+Click to open modal
+
+Click × to close modal
+
+Press Escape key to close modal
+
+Clean Code Practices
+
+Use functions (addinghidden / removeHidden) to avoid repeating code
+
+Keeps code DRY (Don’t Repeat Yourself)
+
+Z-Index and CSS Positioning
+
+Learned how to position modal in center with position: fixed + transform: translate(-50%, -50%)
+
+Use z-index to make modal appear above overlay
+
+Takeaway: Learned how to create interactive UI components with show/hide logic, overlay, multiple event triggers, and clean JS + CSS structure.
+
+✅ Suggestion for README format:
+
+You can write it like this:
+
+Project 1 – Guess the Number Game
+
+Features: Random number, input check, score & highscore, dynamic styling
+
+Key JS concepts learned: DOM manipulation, events, functions, conditional logic, random numbers
+
+Project 2 – Modal Popup
+
+Features: Multiple modals, overlay, close via button or Escape key
+
+Key JS concepts learned: DOM selection, class toggle, multiple event listeners, z-index & CSS positioning
