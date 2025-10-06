@@ -35,7 +35,8 @@ function switchPlayer() {
   }
 }
 
-let newCurrentScore = 0;
+let totalScorePlayer1 = 0;
+let totalScorePlayer2 = 0;
 
 diceRolling.addEventListener("click", function () {
   diceScore = Math.trunc(Math.random() * 6) + 1;
@@ -76,7 +77,7 @@ diceRolling.addEventListener("click", function () {
       // ✅ opens Player 1 check
       bottomLeftScore.textContent = currentScore;
 
-      if (newCurrentScore + currentScore >= 100) {
+      if (totalScorePlayer1 + currentScore >= 100) {
         // ✅ opens Player 1 win check
         topLeftScore.textContent = "Player 1 wins🎆";
 
@@ -87,9 +88,10 @@ diceRolling.addEventListener("click", function () {
       // ✅ opens Player 2 else for activePlayer
       bottomRightScore.textContent = currentScore;
 
-      if (newCurrentScore + currentScore >= 100) {
+      if (totalScorePlayer2 + currentScore >= 100) {
         // ✅ opens Player 2 win check
         topRightScore.textContent = "Player 2 wins🎆";
+
         setTimeout(resetGame, 2000);
         return;
       } // ✅ closes Player 2 win check
@@ -103,9 +105,9 @@ diceRolling.addEventListener("click", function () {
 let holdMyScore = document.querySelector("#score-holder");
 holdMyScore.addEventListener("click", function () {
   if (activePlayer === 1) {
-    newCurrentScore += currentScore;
-    topLeftScore.textContent = newCurrentScore;
-    if (newCurrentScore >= 100) {
+    totalScorePlayer1 += currentScore;
+    topLeftScore.textContent = totalScorePlayer1;
+    if (totalScorePlayer1 >= 100) {
       topLeftScore.textContent = "Player 1 wins";
       setTimeout(resetGame, 2000);
       return;
@@ -117,9 +119,9 @@ holdMyScore.addEventListener("click", function () {
     bottomLeftScore.textContent = 0;
     currentScore = 0;
   } else if (activePlayer === 2) {
-    newCurrentScore += currentScore;
-    topRightScore.textContent = newCurrentScore;
-    if (newCurrentScore >= 100) {
+    totalScorePlayer2 += currentScore;
+    topRightScore.textContent = totalScorePlayer2;
+    if (totalScorePlayer2 >= 100) {
       topRightScore.textContent = "player2 wins";
       setTimeout(resetGame, 2000); // settimeout means in which sec game do the function that we call aloong withit resetgame function
       return;
@@ -143,7 +145,8 @@ restart.addEventListener("click", function () {
 
   // 2️⃣ Reset game variables
   currentScore = 0;
-  newCurrentScore = 0;
+  totalScorePlayer1 = 0;
+  totalScorePlayer2 = 0;
   activePlayer = 1;
 
   // 3️⃣ Hide all dice
@@ -166,7 +169,8 @@ function resetGame() {
 
   // Reset variables
   currentScore = 0;
-  newCurrentScore = 0;
+  totalScorePlayer1 = 0;
+  totalScorePlayer2 = 0;
   activePlayer = 1;
 
   // Hide all dice
