@@ -7,7 +7,7 @@ const resturant = {
   location: ["Gulmarg main road", "Pahalgam main market"],
   categories: ["Non-veg", "Organic", "Italian", "Mughal_flavours"],
   starterMenu: ["Rista", "pizza", "yakhni", "korma"],
-  mainMenu: ["rice", "biryani", "pulav", "Tabakh-Maaz"],
+  mainMenu: ["rice", "biryani", "pulao", "Tabakh-Maaz"],
   openingHours: {
     thrusday: {
       open: 12,
@@ -35,6 +35,11 @@ const resturant = {
   }) {
     console.log(
       `${customerName}'s ${this.starterMenu[starterIndex]} & ${this.mainMenu[mainIndex]}, is deliverd to ${adress} at ${time} `
+    );
+  },
+  addDryFruitsToPulao: function (ing1, ing2, ing3) {
+    console.log(
+      `Here Is Your Delicious Pulao with ${ing1}, ${ing2}, & ${ing3}`
     );
   },
 };
@@ -214,3 +219,50 @@ resturant.orderDelivery({
   starterIndex: 1,
   mainIndex: 2,
 });
+
+// Class3 - of - chapter8 - The Spread Operator
+
+const arr = [7, 8, 9];
+const badNewArray = [1, 2, arr[0], arr[1], arr[2]];
+console.log("BEFORE:");
+console.log(badNewArray);
+
+const newArray = [1, 2, ...arr];
+console.log("AFTER:");
+console.log(newArray);
+
+// add our array to some new array and then add new things to that array by spread operator
+const updatedMainMenu = [...resturant.mainMenu, "Fried-Chicken"];
+const updatedStarterMenu = [...resturant.starterMenu, "Kabab"];
+console.log(updatedMainMenu, updatedStarterMenu);
+
+//shallow copy of array with spread operator
+const mainMenuCopy = [...updatedMainMenu];
+console.log(mainMenuCopy);
+
+// merge arrays togeather
+const mergeupdatedMenu = [...updatedMainMenu, ...updatedStarterMenu];
+// spread operator on strings eg.
+
+const str = "Danish";
+const letters = [...str];
+console.log(letters);
+console.log(...str);
+
+// Real world problem of spread opearator
+
+// const ingredients = [
+//   prompt("let's add dryfruits to your pulao,ENTER dryfruit1"),
+//   prompt("dryfruit2"),
+//   prompt("dryfruit3"),
+// ];
+
+// resturant.addDryFruitsToPulao(...ingredients);
+
+const newResturant = { founder: "Danish Nisar", ...resturant, foundIn: 2003 };
+console.log(newResturant);
+
+const copyResturant = { ...resturant };
+copyResturant.name = "Aima Resturant";
+console.log(copyResturant.name);
+console.log(resturant.name);

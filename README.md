@@ -2,6 +2,12 @@
 
 ![📄 View image](./images)
 
+### git format
+
+git add .
+git commit -m " "
+git push
+
 ### learning-javascript
 
 ![📄 View image](./images/1st-five-topics_of_chaptet1_1.jpg)
@@ -1921,3 +1927,10 @@ When your code allocates too often without release, the heap�
 ![📄 View image](./images/class2-chapter8_3.jpg)
 ![📄 View image](./images/class2-chapter8_4.jpg)
 ![📄 View image](./images/class2-chapter8_5.jpg)
+
+### Class3 - of - chapter8 - The Spread Operator
+
+![📄 View image](./images/class3-chapter8_1.jpg)
+![📄 View image](./images/class3-chapter8_2.jpg)
+![📄 View image](./images/class3-chapter8_3.jpg)
+![📄 View image](./images/class3-chapter8_4.jpg)
