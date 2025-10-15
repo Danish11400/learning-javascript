@@ -302,5 +302,6 @@ resturant.orderPizza(
   "chicken",
   "Extra-Cheese",
   "Mutton",
-  "olives"
+  "olives",
+  "onions"
 );
