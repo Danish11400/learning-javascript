@@ -297,4 +297,10 @@ const add = function (...bottle) {
 add(546, 549, 984, 4956, 654435, 74645, 55650);
 add(45, 33);
 
-resturant.orderPizza("mushrooms", "chicken", "Extra-Cheese", "Mutton");
+resturant.orderPizza(
+  "mushrooms",
+  "chicken",
+  "Extra-Cheese",
+  "Mutton",
+  "olives"
+);
