@@ -10,16 +10,16 @@ const resturant = {
   mainMenu: ["rice", "biryani", "pulao", "Tabakh-Maaz"],
   openingHours: {
     thrusday: {
-      open: 12,
-      close: 22,
+      open: 13,
+      close: 11,
     },
     friday: {
-      open: 11,
-      close: 23,
+      open: 15,
+      close: 9,
     },
     saturday: {
-      open: 0, // open 24 hours
-      close: 22,
+      open: 24, // open 24 hours
+      close: 0,
     },
   },
 
@@ -41,6 +41,10 @@ const resturant = {
     console.log(
       `Here Is Your Delicious Pulao with ${ing1}, ${ing2}, & ${ing3}`
     );
+  },
+  orderPizza: function (ingrident1, ...otheringridents) {
+    console.log(ingrident1);
+    console.log(otheringridents);
   },
 };
 
@@ -266,3 +270,31 @@ const copyResturant = { ...resturant };
 copyResturant.name = "Aima Resturant";
 console.log(copyResturant.name);
 console.log(resturant.name);
+
+// Class4 - of - chapter8 - Rest Pattern & Parameters
+
+const [aa, bb, ...others] = [1, 2, 3, 4, 5, 6, 7];
+console.log(aa, bb, others);
+
+const [food1, , food2, ...otherfoods] = [
+  ...resturant.mainMenu,
+  ...resturant.starterMenu,
+];
+
+console.log(food1, food2, otherfoods);
+
+// rest operator on objects
+const { friday, ...weekdays } = { ...resturant.openingHours };
+console.log(weekdays);
+
+// rest operator on functions
+const add = function (...bottle) {
+  let sum = 0;
+  for (let i = 0; i < bottle.length; i++) sum += bottle[i];
+
+  console.log(sum);
+};
+add(546, 549, 984, 4956, 654435, 74645, 55650);
+add(45, 33);
+
+resturant.orderPizza("mushrooms", "chicken", "Extra-Cheese", "Mutton");

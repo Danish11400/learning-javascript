@@ -1934,3 +1934,9 @@ When your code allocates too often without release, the heap�
 ![📄 View image](./images/class3-chapter8_2.jpg)
 ![📄 View image](./images/class3-chapter8_3.jpg)
 ![📄 View image](./images/class3-chapter8_4.jpg)
+
+### Class4 - of - chapter8 - Rest Pattern & Parameters
+
+![📄 View image](./images/class4-chapter8_1.jpg)
+![📄 View image](./images/class4-chapter8_2.jpg)
+![📄 View image](./images/class4-chapter8_3.jpg)
