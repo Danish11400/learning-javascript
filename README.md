@@ -1913,3 +1913,11 @@ When your code allocates too often without release, the heap�
 ![📄 View image](./images/class1-chapter8_2.jpg)
 ![📄 View image](./images/class1-chapter8_3.jpg)
 ![📄 View image](./images/class1-chapter8_4.jpg)
+
+### Class2 - of - chapter8 - Destructuring Objects
+
+![📄 View image](./images/class2-chapter8_1.jpg)
+![📄 View image](./images/class2-chapter8_2.jpg)
+![📄 View image](./images/class2-chapter8_3.jpg)
+![📄 View image](./images/class2-chapter8_4.jpg)
+![📄 View image](./images/class2-chapter8_5.jpg)
