@@ -311,10 +311,15 @@ resturant.orderPizza(
 console.log(null || undefined);
 console.log("danish" || 33);
 
-const guests = resturant.numguests || 10;
-console.log(guests);
+const guests00 = resturant.numguests || 10;
+console.log(guests00);
 // short circuiting in AND operator
 console.log("danish" && null);
 const ordered =
   resturant.orderPizza && resturant.orderPizza("mushrooms", "spanish");
 console.log(ordered);
+
+// class6 - of - chapter8 - NULLISH Opertor
+resturant.numguests = 0;
+const guests = resturant.numguests ?? 10;
+console.log(guests);
