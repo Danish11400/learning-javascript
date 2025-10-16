@@ -323,3 +323,25 @@ console.log(ordered);
 resturant.numguests = 0;
 const guests = resturant.numguests ?? 10;
 console.log(guests);
+
+//  Class7 - of - Chapter8 - logical assignmet operators
+const rest1 = {
+  name00: "Chapri",
+  numGuests00: 20,
+};
+
+const rest2 = {
+  name000: "Tapri",
+  owner00: "Pikachu",
+};
+// 1. logical or operator  (||=)
+rest1.numGuests00 ||= 10; // means rest1.numGuests00 = rest1.numGuests00 || 10;
+rest2.numGuests00 ||= 10; // means rest2.numGuests00 = rest2.numGuests00 || 10;
+
+// 2. logical nullish opeartor (??=)
+rest1.numGuests00 ??= 10; // means rest1.numGuests00 = rest1.numGuests00 ?? 10;
+rest2.numGuests00 ??= 10; // means rest2.numGuests00 = rest2.numGuests00 ?? 10;
+
+// 3. logical and opeartor
+rest1.owner &&= "hello"; // means rest1.owner=rest1.owner && "hello";
+rest2.owner &&= "hello"; // means rest2.owner=rest2.owner && "hello";
