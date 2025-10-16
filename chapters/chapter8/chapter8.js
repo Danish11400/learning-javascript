@@ -305,3 +305,16 @@ resturant.orderPizza(
   "olives",
   "onions"
 );
+
+// Class5 - of - Chapter8 - Short Circuiting (&& and)
+// short circuiting in OR operator
+console.log(null || undefined);
+console.log("danish" || 33);
+
+const guests = resturant.numguests || 10;
+console.log(guests);
+// short circuiting in AND operator
+console.log("danish" && null);
+const ordered =
+  resturant.orderPizza && resturant.orderPizza("mushrooms", "spanish");
+console.log(ordered);
