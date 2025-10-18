@@ -345,3 +345,16 @@ rest2.numGuests00 ??= 10; // means rest2.numGuests00 = rest2.numGuests00 ?? 10;
 // 3. logical and opeartor
 rest1.owner &&= "hello"; // means rest1.owner=rest1.owner && "hello";
 rest2.owner &&= "hello"; // means rest2.owner=rest2.owner && "hello";
+
+// Class8  - of  - chapter 8 - looping array the for-of-loop
+
+const menu2 = [...resturant.starterMenu, ...resturant.mainMenu];
+
+for (const i of menu2) console.log(i);
+for (const i of menu2.entries()) {
+  console.log(i);
+}
+console.log([...menu2.entries()]);
+for (const i of menu2.entries()) {
+  console.log(`${i[0] + 1}=${i[1]}`);
+}
