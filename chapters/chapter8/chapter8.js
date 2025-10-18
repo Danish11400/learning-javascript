@@ -117,11 +117,11 @@ console.log(abcd, bcde);
 
 // nested objects
 
-const {
-  friday: { open: o, close: cl },
-} = openingHours; // here we need elements nested inside the object
+// const {
+//   friday: { open: o, close: cl },
+// } = openingHours; // here we need elements nested inside the object
 
-console.log(o, cl);
+// console.log(o, cl);
 
 resturant.orderDelivery({
   // Look here we didnt write them in correct order but it still goes at correct place due to destructing we just pass an object into the function
@@ -366,3 +366,57 @@ for (const i of menu2.entries()) {
 }
 
 // Class9 - of - Chapter8 -  Enhanced Object Literals
+
+/*
+const open = ["mon", "tue", "wed", "thu"];
+const hello = {
+  [open[1]]: {
+    open: 11,
+    close: 12,
+  },
+  [open[3]]: {
+    open: 10,
+    close: 14,
+  },
+};
+
+
+console.log(hello);
+
+
+*/
+// Class10 - of - Chapter8 -  Optional Chaining
+
+if (resturant.Hours.mon?.open)
+  console.log(
+    `hello brother its monday opened for${resturant.Hours.friday.open} hours`
+  );
+if (resturant.Hours?.friday?.open)
+  console.log(
+    ` hello brother its friday opened for ${resturant.Hours.friday.open} hours`
+  );
+
+const days = [
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thrusday",
+  "friday",
+  "saturday",
+  "sunday",
+];
+// for varaible optional chaining
+for (let day2 of days) {
+  const open2 = resturant.Hours[day2]?.open ?? "closed";
+  console.log(`On ${day2} we are open till ${open2}`);
+}
+// optional chaning for methods
+console.log(
+  resturant.orderPizzatop?.("mushrooms", "dryfruits") ?? "method didnt exist"
+);
+console.log(
+  resturant.orderPizza?.("mushrooms", "dryfruits") ?? "method didnt exist"
+);
+// optional chaning for arrays
+const user = [{ name: "danish", email: "dn4198420gmail.com" }];
+console.log(user[0]?.email ?? "email didnt exist");
