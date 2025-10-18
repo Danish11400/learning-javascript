@@ -2,26 +2,30 @@
 // Chapter-8 - Data Structures, Modern Operators and Strings
 // Class1 - of - chapter8 - Destructuring array
 
+// Enchanced object literals
+const Hours = {
+  thrusday: {
+    open: 13,
+    close: 11,
+  },
+  friday: {
+    open: 15,
+    close: 9,
+  },
+  saturday: {
+    open: 24, // open 24 hours
+    close: 0,
+  },
+};
+
 const resturant = {
   name: "valleys cafe & resturant",
   location: ["Gulmarg main road", "Pahalgam main market"],
   categories: ["Non-veg", "Organic", "Italian", "Mughal_flavours"],
   starterMenu: ["Rista", "pizza", "yakhni", "korma"],
   mainMenu: ["rice", "biryani", "pulao", "Tabakh-Maaz"],
-  openingHours: {
-    thrusday: {
-      open: 13,
-      close: 11,
-    },
-    friday: {
-      open: 15,
-      close: 9,
-    },
-    saturday: {
-      open: 24, // open 24 hours
-      close: 0,
-    },
-  },
+
+  Hours,
 
   order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -47,6 +51,8 @@ const resturant = {
     console.log(otheringridents);
   },
 };
+
+console.log(resturant);
 
 let [first, , , second] = resturant.categories;
 console.log(first, second);
@@ -358,3 +364,5 @@ console.log([...menu2.entries()]);
 for (const i of menu2.entries()) {
   console.log(`${i[0] + 1}=${i[1]}`);
 }
+
+// Class9 - of - Chapter8 -  Enhanced Object Literals
