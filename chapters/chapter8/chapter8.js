@@ -420,3 +420,12 @@ console.log(
 // optional chaning for arrays
 const user = [{ name: "danish", email: "dn4198420gmail.com" }];
 console.log(user[0]?.email ?? "email didnt exist");
+
+// Class11 - of - Chapter8 - Looping object keys, values, and entries
+
+const values = Object.values(Hours);
+const entries = Object.entries(Hours);
+
+for (const [keys, { open, close }] of entries) {
+  console.log(`On ${keys} We Open At ${open} And Close At ${close}`);
+}
