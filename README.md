@@ -5,7 +5,7 @@
 ### git format
 
 git add .
-git commit -m "complete class11 of chapter8"
+git commit -m "complete class12 of chapter8"
 git push
 
 ### learning-javascript
@@ -1977,3 +1977,8 @@ When your code allocates too often without release, the heap�
 
 ![📄 View image](./images/class11-chapter8_1.jpg)
 ![📄 View image](./images/class11-chapter8_2.jpg)
+
+### Class12 - of - Chapter8 - Sets
+
+![📄 View image](./images/class12-chapter8_1.jpg)
+![📄 View image](./images/class12-chapter8_2.jpg)

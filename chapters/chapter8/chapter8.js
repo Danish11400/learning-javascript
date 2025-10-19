@@ -429,3 +429,21 @@ const entries = Object.entries(Hours);
 for (const [keys, { open, close }] of entries) {
   console.log(`On ${keys} We Open At ${open} And Close At ${close}`);
 }
+
+// Class12 - of - Chapter8 -  Sets
+
+const orderSet = new Set([
+  "Danish",
+  "hello",
+  "hello",
+  "hello",
+  "Danish",
+  "brother",
+]);
+console.log(orderSet);
+console.log(orderSet.size);
+console.log(orderSet.has("bread"));
+console.log(orderSet.delete("hello"));
+console.log(orderSet);
+console.log(orderSet.add("bread"));
+console.log(orderSet.has("bread"));
