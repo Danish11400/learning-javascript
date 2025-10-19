@@ -512,3 +512,26 @@ console.log(uniqueItalianAndMexcianfoods);
 
 // 5. disjoint method
 console.log(italianFoods.isDisjointFrom(mexicanFoods));
+
+// Class14 - of - Chapter8 -  Maps
+
+const rest = new Map();
+rest.set("name", "valleys cafe and resturant");
+rest.set(1, "pahalgam");
+rest.set(2, "gulmarg");
+rest.set("categories", ["Non-veg", "Organic", "Italian", "Mughal_flavours"]);
+console.log(rest);
+
+rest
+  .set("close", 23)
+  .set("open", 11)
+  .set(true, "we are open now")
+  .set(false, "we are close now");
+console.log(rest);
+
+console.log(rest.get(1));
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(`-------------------------------------`);
+let time = 21;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
