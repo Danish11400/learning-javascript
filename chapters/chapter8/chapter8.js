@@ -447,3 +447,68 @@ console.log(orderSet.delete("hello"));
 console.log(orderSet);
 console.log(orderSet.add("bread"));
 console.log(orderSet.has("bread"));
+
+// Class13 - of - Chapter8 -  New operation to make Sets usefull
+
+const italianFoods = new Set([
+  "pasta",
+
+  "gnocchi",
+
+  "tomatoes",
+
+  "olive oil",
+
+  "garlic",
+
+  "basil",
+]);
+
+const mexicanFoods = new Set([
+  "tortillas",
+
+  "beans",
+
+  "rice",
+
+  "tomatoes",
+
+  "avocado",
+
+  "garlic",
+]);
+// 1. intersection method
+
+const commomFoods = mexicanFoods.intersection(italianFoods);
+
+console.log(commomFoods);
+
+console.log([...commomFoods]); // for ---->Array
+
+// 2. union method
+
+const italianMexicanFusion = italianFoods.union(mexicanFoods);
+console.log(italianMexicanFusion);
+
+console.log([...italianMexicanFusion]); // for ---->Array
+
+// anotherway to do that
+
+console.log([...new Set([...mexicanFoods, ...italianFoods])]);
+
+// 3. difference method
+
+const uniqueMexicanFoods = mexicanFoods.difference(italianFoods);
+const uniqueItalianFoods = italianFoods.difference(mexicanFoods);
+console.log(uniqueItalianFoods);
+console.log(uniqueMexicanFoods);
+
+// 4. symmetricDiffernce method
+
+const uniqueItalianAndMexcianfoods =
+  mexicanFoods.symmetricDifference(italianFoods);
+console.log(`----------SYMMETRIC DIFFERNCE WALA------`);
+console.log(uniqueItalianAndMexcianfoods);
+
+// 5. disjoint method
+console.log(italianFoods.isDisjointFrom(mexicanFoods));
