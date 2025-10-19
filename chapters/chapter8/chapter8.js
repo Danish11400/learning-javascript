@@ -535,3 +535,8 @@ console.log(rest.get(true));
 console.log(`-------------------------------------`);
 let time = 21;
 console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
+console.log(rest.delete(1));
+
+rest.set(document.querySelector("h1"), "hello");
