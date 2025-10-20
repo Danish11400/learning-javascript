@@ -568,3 +568,5 @@ for (const [key, value] of questions) {
 
 // console.log(questions.get(questions.get("correct") === answer));
 console.log([...questions.keys()]);
+
+// Class16 - chapter8 - which data structure we should use?
