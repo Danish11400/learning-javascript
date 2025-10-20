@@ -540,3 +540,31 @@ console.log(rest.has("categories"));
 console.log(rest.delete(1));
 
 rest.set(document.querySelector("h1"), "hello");
+
+// Class15 - of - Chapter8 -  Maps iterations
+
+const questions = new Map([
+  ["question", "what is the best programming language in the world"],
+  [1, "C"],
+  [2, "java"],
+  [3, "java script"],
+  ["correct", 3],
+  [true, "correct"],
+  [false, "try again"],
+]);
+console.log(questions);
+
+const hoursMap = new Map(Object.entries(Hours));
+console.log(hoursMap);
+
+// loop on maps
+for (const [key, value] of questions) {
+  if (typeof key === "number") {
+    console.log(`Option ${key} = ${value}`);
+  }
+}
+
+// const answer = Number(prompt(`Enter Correct Option`));
+
+// console.log(questions.get(questions.get("correct") === answer));
+console.log([...questions.keys()]);
