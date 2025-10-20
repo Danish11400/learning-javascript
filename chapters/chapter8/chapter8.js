@@ -609,7 +609,7 @@ checkMiddleSeat("23C");
 checkMiddleSeat("568E");
 
 // just fun readme thing
-const number_of_class = 18;
+const number_of_class = 19;
 let result = "";
 for (let i = 1; i < 4; i++) {
   result += `![🗎 View image](./images/class${number_of_class}-chapter8_${i}.jpg)<br>`;
@@ -623,3 +623,27 @@ let motu =
 const boxer_baiya = motu.trim();
 const patlu = boxer_baiya.replaceAll("bulb", "bati");
 console.log(patlu);
+
+// Class19 - chapter8 - working with strings part 3
+
+const nameCapitalize = function (name) {
+  const names = name.split(" ");
+  let namesUpper = [];
+  for (const n of names) {
+    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+  console.log(namesUpper.join(" "));
+};
+nameCapitalize("bru ta tri roma in kapate");
+
+// real world example of padding
+
+const mask = function (number) {
+  const str = String(number);
+  const last = str.slice(-4);
+  return `your account number ${last.padStart(str.length, "x")} 
+  is credited by 2000 rs so enjoy`;
+};
+console.log(mask("5152280815027829"));
+
+console.log(mask("0815040800000652"));

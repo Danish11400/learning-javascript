@@ -33,7 +33,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class18 of chapter8"
+git commit -m "complete class19 of chapter8"
 git push
 
 ### learning-javascript
@@ -2047,3 +2047,9 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class18-chapter8_1.jpg)
 ![🗎 View image](./images/class18-chapter8_2.jpg)
 ![🗎 View image](./images/class18-chapter8_3.jpg)
+
+### Class19 - chapter8 - working with strings part 3
+
+![🗎 View image](./images/class19-chapter8_1.jpg)
+![🗎 View image](./images/class19-chapter8_2.jpg)
+![🗎 View image](./images/class19-chapter8_3.jpg)
