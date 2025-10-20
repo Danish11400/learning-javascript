@@ -570,3 +570,45 @@ for (const [key, value] of questions) {
 console.log([...questions.keys()]);
 
 // Class16 - chapter8 - which data structure we should use?
+
+// Class17 - chapter8 - working with strings part 1
+
+// strings also have arrays
+const airline = "Tap Air Portugal";
+const plane = "A320";
+console.log(plane[0]);
+console.log(plane[3]);
+
+console.log(plane.length);
+console.log("B237".length);
+
+const hi = "javascript";
+console.log(hi.slice(3, 6));
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+const hi2 = "GOLDEN";
+console.log(hi2.slice(1, -1));
+
+// b and e are middle seats
+const checkMiddleSeat = (seat) => {
+  // Here we use arrow function
+  const s = seat.slice(-1);
+  switch (s) {
+    // here we use switch case statements not if else just for practice of switch case
+
+    case "B":
+    case "E":
+      console.log(`You Got The Middle seat 🥲`);
+      break;
+    default:
+      console.log(`You are Lucky 😲`);
+  }
+};
+checkMiddleSeat("23C");
+checkMiddleSeat("568E");
+
+// just fun readme thing
+for (let i = 0; i < 6; i++) {
+  console.log(`![📄 View image](./images/class17-chapter8_${i}.jpg)`);
+}
