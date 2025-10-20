@@ -609,6 +609,17 @@ checkMiddleSeat("23C");
 checkMiddleSeat("568E");
 
 // just fun readme thing
-for (let i = 0; i < 6; i++) {
-  console.log(`![📄 View image](./images/class17-chapter8_${i}.jpg)`);
+const number_of_class = 18;
+let result = "";
+for (let i = 1; i < 4; i++) {
+  result += `![🗎 View image](./images/class${number_of_class}-chapter8_${i}.jpg)<br>`;
 }
+document.getElementById("output").innerHTML = result;
+
+// Class18 - chapter8 - working with strings part 2
+
+let motu =
+  "      khali paat mara dimag ki bulb nahi chalti tum hi kuch sooncho patlu ... IDEA ---> then bulb lights up";
+const boxer_baiya = motu.trim();
+const patlu = boxer_baiya.replaceAll("bulb", "bati");
+console.log(patlu);

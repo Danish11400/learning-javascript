@@ -2,10 +2,38 @@
 
 ![📄 View image](./images)
 
+### readme code to ease my ormat
+
+```html
+<style>
+  #output {
+    font-size: 1.7rem;
+    color: whitesmoke;
+  }
+  body {
+    background-color: rgb(110, 37, 178);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+</style>
+<div id="output"></div>
+```
+
+```js
+const number_of_class = 18;
+let result = "";
+for (let i = 1; i < 4; i++) {
+  result += `![🗎 View image](./images/class${number_of_class}-chapter8_${i}.jpg)<br>`;
+}
+document.getElementById("output").innerHTML = result;
+```
+
 ### git format
 
 git add .
-git commit -m "complete class17 of chapter8"
+git commit -m "complete class18 of chapter8"
 git push
 
 ### learning-javascript
@@ -2013,3 +2041,9 @@ When your code allocates too often without release, the heap�
 ![📄 View image](./images/class17-chapter8_3.jpg)
 ![📄 View image](./images/class17-chapter8_4.jpg)
 ![📄 View image](./images/class17-chapter8_5.jpg)
+
+### Class18 - chapter8 - working with strings part 2
+
+![🗎 View image](./images/class18-chapter8_1.jpg)
+![🗎 View image](./images/class18-chapter8_2.jpg)
+![🗎 View image](./images/class18-chapter8_3.jpg)
