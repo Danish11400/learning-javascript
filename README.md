@@ -23,9 +23,10 @@
 
 ```js
 const number_of_class = 18;
+const numberOfChapter = 18;
 let result = "";
 for (let i = 1; i < 4; i++) {
-  result += `![🗎 View image](./images/class${number_of_class}-chapter8_${i}.jpg)<br>`;
+  result += `![🗎 View image](./images/class${number_of_class}-chapter${numberOfChapter}_${i}.jpg)<br>`;
 }
 document.getElementById("output").innerHTML = result;
 ```
@@ -33,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class19 of chapter8"
+git commit -m "complete class2 of chapter9"
 git push
 
 ### learning-javascript
@@ -2053,3 +2054,9 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class19-chapter8_1.jpg)
 ![🗎 View image](./images/class19-chapter8_2.jpg)
 ![🗎 View image](./images/class19-chapter8_3.jpg)
+
+#### Chapter 9 starts - A Closer Look At Functions
+
+### Class2 - of - Chapter9 - Default Parameters
+
+![🗎 View image](./images/class2-chapter9_1.jpg)
