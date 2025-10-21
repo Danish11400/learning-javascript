@@ -34,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class2 of chapter9"
+git commit -m "complete class3 of chapter9"
 git push
 
 ### learning-javascript
@@ -2060,3 +2060,10 @@ When your code allocates too often without release, the heap�
 ### Class2 - of - Chapter9 - Default Parameters
 
 ![🗎 View image](./images/class2-chapter9_1.jpg)
+
+### Class3 - of - Chapter9 - How Passing Arguments Works Value vs. Reference
+
+![🗎 View image](./images/class3-chapter9_1.jpg)
+![🗎 View image](./images/class3-chapter9_2.jpg)
+![🗎 View image](./images/class3-chapter9_3.jpg)
+![🗎 View image](./images/class3-chapter9_4.jpg)
