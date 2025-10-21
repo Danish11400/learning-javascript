@@ -1,9 +1,9 @@
 "use strict";
 
-const number_of_class = 4;
+const number_of_class = 5;
 const numberOfChapter = 9;
 let result = "";
-for (let i = 1; i < 5; i++) {
+for (let i = 1; i < 3; i++) {
   result += `![🗎 View image](./images/class${number_of_class}-chapter${numberOfChapter}_${i}.jpg)<br>`;
 }
 document.getElementById("output").innerHTML = result;
@@ -36,12 +36,13 @@ const jonas = {
 
 const checkIn = function (flightNUm, Passengers) {
   flightNUm = "LI321";
-  Passengers.name = "motu patlu" + " " + Passengers.name;
-  if (Passengers.passport === 123456789) {
-    alert("You Are Checked In");
-  } else {
-    alert("Wrong Passport");
-  }
+  Passengers.name = "motu patlu" + " " + Passengers.name; // turn off for interrupting purpose
+
+  // if (Passengers.passport === 123456789) {
+  //   alert("You Are Checked In");
+  // } else {
+  //   alert("Wrong Passport");
+  // }
   // console.log(flight1);
   // console.log(flightNUm);
 };
@@ -82,3 +83,25 @@ const high5 = function () {
   console.log("👋");
 };
 document.body.addEventListener("click", high5);
+
+// Class5 - of - chapter9 - functions returning functions
+
+// with normal function
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+const greetHey = greet("hey");
+greetHey("Danish");
+greet("hello")("Jonas");
+
+// with arrow function
+
+const greet2 = (greeting2) => {
+  return (name2) => {
+    console.log(`${greeting2} ${name2}`);
+  };
+};
+const greetHey2 = greet2("assalamalikum");
+greetHey2("habibi");

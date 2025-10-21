@@ -34,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class4 of chapter9"
+git commit -m "complete class5 of chapter9"
 git push
 
 ### learning-javascript
@@ -2068,9 +2068,14 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class3-chapter9_3.jpg)
 ![🗎 View image](./images/class3-chapter9_4.jpg)
 
-### Class4 - of - chapter9 - Functions Accepting Callback Functions
+### Class4 - of - Chapter9 - Functions Accepting Callback Functions
 
 ![🗎 View image](./images/class4-chapter9_1.jpg)
 ![🗎 View image](./images/class4-chapter9_2.jpg)
 ![🗎 View image](./images/class4-chapter9_3.jpg)
 ![🗎 View image](./images/class4-chapter9_4.jpg)
+
+### Class5 - of - Chapter9 - functions returning functions
+
+![🗎 View image](./images/class5-chapter9_1.jpg)
+![🗎 View image](./images/class5-chapter9_2.jpg)
