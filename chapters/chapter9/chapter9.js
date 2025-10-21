@@ -1,6 +1,6 @@
 "use strict";
 
-const number_of_class = 3;
+const number_of_class = 4;
 const numberOfChapter = 9;
 let result = "";
 for (let i = 1; i < 5; i++) {
@@ -55,3 +55,30 @@ const newPassport = (person) => {
 newPassport(jonas);
 console.log(jonas.passport);
 checkIn(flight1, jonas);
+
+// Class4 - of - chapter9 - Functions Accepting Callback Functions
+
+const oneWord = function (str) {
+  return str.replaceAll(/ /g, "").toLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(" ");
+  return [first.toUpperCase(), ...others].join(" "); // .join only allows on arrays like [array].join
+};
+
+const transformer = function (str, fn) {
+  console.log(`Original One: ${str}`);
+  console.log(`Transform One: ${fn(str)}`);
+  console.log(`Transformed by: ${fn.name}`);
+};
+
+transformer("Javascript is best!", oneWord);
+
+console.log(`<------------------------------------------->`);
+transformer("Javascript is best!", upperFirstWord);
+
+const high5 = function () {
+  console.log("👋");
+};
+document.body.addEventListener("click", high5);
