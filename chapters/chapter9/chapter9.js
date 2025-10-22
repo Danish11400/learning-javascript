@@ -1,6 +1,6 @@
 "use strict";
 
-const number_of_class = 5;
+const number_of_class = 6;
 const numberOfChapter = 9;
 let result = "";
 for (let i = 1; i < 3; i++) {
@@ -105,3 +105,45 @@ const greet2 = (greeting2) => {
 };
 const greetHey2 = greet2("assalamalikum");
 greetHey2("habibi");
+
+// Class6 - of - Chapter9 - The call and apply Methods
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  bookings: [],
+  book: function (FlightNUm, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${FlightNUm}`
+    );
+    // this.bookings.push({
+    //   flight: `${this.iataCode} ${FlightNUm}`,
+    //   airline: `${this.airline}`,
+    //   name,
+    // });
+  },
+};
+lufthansa.book(23, "danish nisar");
+console.log(lufthansa.bookings);
+
+// make new airline now
+
+const eurowings = {
+  airline: "Eurowings",
+  iataCode: "EW",
+  bookings: [],
+};
+
+const book = lufthansa.book;
+book.call(eurowings, 23, "hello bro");
+book.call(lufthansa, 20003, "Motu Patlu");
+
+const swiss = {
+  airline: "swiss",
+  iataCode: "SW",
+  bookings: [],
+};
+
+book.call(swiss, 426, "Dr.Jatks & Gaseetaram");
+const arrData = [3004, "Boxer Baya"];
+book.apply(swiss, arrData);
+book.call(eurowings, ...arrData);
