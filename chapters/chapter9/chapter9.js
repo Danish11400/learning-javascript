@@ -1,9 +1,9 @@
 "use strict";
 
-const number_of_class = 6;
+const number_of_class = 7;
 const numberOfChapter = 9;
 let result = "";
-for (let i = 1; i < 3; i++) {
+for (let i = 1; i < 4; i++) {
   result += `![🗎 View image](./images/class${number_of_class}-chapter${numberOfChapter}_${i}.jpg)<br>`;
 }
 document.getElementById("output").innerHTML = result;
@@ -80,7 +80,7 @@ console.log(`<------------------------------------------->`);
 transformer("Javascript is best!", upperFirstWord);
 
 const high5 = function () {
-  console.log("👋");
+  // console.log("👋");
 };
 document.body.addEventListener("click", high5);
 
@@ -147,3 +147,29 @@ book.call(swiss, 426, "Dr.Jatks & Gaseetaram");
 const arrData = [3004, "Boxer Baya"];
 book.apply(swiss, arrData);
 book.call(eurowings, ...arrData);
+
+// Class7 - of - Chapter9 - The Bind Methods
+
+const bookBInd = book.bind(swiss);
+bookBInd(2113, "Chingam Sir");
+
+const bookLH = book.bind(lufthansa, 2050);
+bookLH("Chai Walei Bhaiya");
+
+lufthansa.planes = 300;
+lufthansa.buyplanes = function () {
+  this.planes++;
+  console.log(this.planes);
+};
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyplanes.bind(lufthansa));
+
+// partial application
+const addTax = (rate, value) => {
+  return value + value * rate;
+};
+
+console.log(addTax(0.1, 200));
+const addVat = addTax.bind(null, 0.23);
+console.log(addVat(0.23));
