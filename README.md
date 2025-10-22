@@ -34,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class7 of chapter9"
+git commit -m "complete class9 of chapter9"
 git push
 
 ### learning-javascript
@@ -2090,3 +2090,9 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class7-chapter9_1.jpg)
 ![🗎 View image](./images/class7-chapter9_2.jpg)
 ![🗎 View image](./images/class7-chapter9_3.jpg)
+
+### Class8 - chapter9 - IIFE
+
+![🗎 View image](./images/class8-chapter9_1.jpg)
+
+### Class9 - of - Chapter9 - Clousers

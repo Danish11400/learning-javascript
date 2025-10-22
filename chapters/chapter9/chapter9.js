@@ -1,6 +1,6 @@
 "use strict";
 
-const number_of_class = 7;
+const number_of_class = 8;
 const numberOfChapter = 9;
 let result = "";
 for (let i = 1; i < 4; i++) {
@@ -173,3 +173,9 @@ const addTax = (rate, value) => {
 console.log(addTax(0.1, 200));
 const addVat = addTax.bind(null, 0.23);
 console.log(addVat(0.23));
+
+// Class8 - chapter9 - IIFE
+
+(function () {
+  console.log(`This Wll never run again`);
+})();
