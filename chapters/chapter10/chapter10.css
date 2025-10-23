@@ -1,0 +1,11 @@
+#output {
+  font-size: 1.7rem;
+  color: whitesmoke;
+}
+body {
+  background-color: rgb(110, 37, 178);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}

@@ -22,8 +22,8 @@
 ```
 
 ```js
-const number_of_class = 18;
-const numberOfChapter = 18;
+const number_of_class = 2;
+const numberOfChapter = 10;
 let result = "";
 for (let i = 1; i < 4; i++) {
   result += `![🗎 View image](./images/class${number_of_class}-chapter${numberOfChapter}_${i}.jpg)<br>`;
@@ -34,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class10 of chapter9"
+git commit -m "complete class2 of chapter10"
 git push
 
 ### learning-javascript
@@ -2107,3 +2107,10 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class10-chapter9_1.jpg)
 ![🗎 View image](./images/class10-chapter9_2.jpg)
 ![🗎 View image](./images/class10-chapter9_3.jpg)
+
+#### Chapter 10 starts
+
+### Class2 of Chapter10 - simple array method
+
+![🗎 View image](./images/class2-chapter10_1.jpg)
+![🗎 View image](./images/class2-chapter10_2.jpg)
