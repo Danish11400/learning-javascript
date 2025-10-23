@@ -63,6 +63,7 @@ document
   .querySelector(".poll")
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
 
+// challenge 2 of chapter9
 (function () {
   const header = document.querySelector("h1");
   header.style.color = "red";
