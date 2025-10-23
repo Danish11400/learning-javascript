@@ -2096,3 +2096,8 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class8-chapter9_1.jpg)
 
 ### Class9 - of - Chapter9 - Clousers
+
+![🗎 View image](./images/class9-chapter9_1.jpg)
+![🗎 View image](./images/class9-chapter9_2.jpg)
+![🗎 View image](./images/class9-chapter9_3.jpg)
+![🗎 View image](./images/class9-chapter9_4.jpg)

@@ -1,9 +1,9 @@
 "use strict";
 
-const number_of_class = 8;
+const number_of_class = 9;
 const numberOfChapter = 9;
 let result = "";
-for (let i = 1; i < 4; i++) {
+for (let i = 1; i < 5; i++) {
   result += `![🗎 View image](./images/class${number_of_class}-chapter${numberOfChapter}_${i}.jpg)<br>`;
 }
 document.getElementById("output").innerHTML = result;
@@ -179,3 +179,20 @@ console.log(addVat(0.23));
 (function () {
   console.log(`This Wll never run again`);
 })();
+
+// Class9 - of - Chapter9 - Clousers
+
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount}: passengers`);
+  };
+};
+const booker = secureBooking();
+booker();
+booker();
+booker();
+
+console.dir(booker);
