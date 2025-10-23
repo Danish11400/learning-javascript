@@ -12,7 +12,7 @@ document.getElementById("output").innerHTML = result;
 
 // Class3 of Chapter10 - at method
 
-// Class4 of Chapter10 - forEach looping
+// Class4 of Chapter10 - forEach looping over array
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -23,3 +23,5 @@ movements.forEach(function (movement) {
     console.log(`you withdraw : ${Math.abs(movement)}`);
   }
 });
+
+//  Class5 of Chapter10 - forEach looping over maps and sets
