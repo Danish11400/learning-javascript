@@ -1,6 +1,6 @@
 "use strict";
 
-const number_of_class = 9;
+const number_of_class = 10;
 const numberOfChapter = 9;
 let result = "";
 for (let i = 1; i < 5; i++) {
@@ -196,3 +196,5 @@ booker();
 booker();
 
 console.dir(booker);
+
+// Class10 - of - Chapter9 - More Clousers Examples
