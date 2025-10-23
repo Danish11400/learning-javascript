@@ -34,7 +34,7 @@ document.getElementById("output").innerHTML = result;
 ### git format
 
 git add .
-git commit -m "complete class3 of chapter10"
+git commit -m "complete class4 of chapter10"
 git push
 
 ### learning-javascript
@@ -2118,3 +2118,9 @@ When your code allocates too often without release, the heap�
 ### Class3 of Chapter10 - at method
 
 ![🗎 View image](./images/class3-chapter10_1.jpg)
+
+### Class4 of Chapter10 - forEach looping
+
+![🗎 View image](./images/class4-chapter10_1.jpg)
+![🗎 View image](./images/class4-chapter10_2.jpg)
+![🗎 View image](./images/class4-chapter10_3.jpg)
