@@ -62,3 +62,12 @@ const poll = {
 document
   .querySelector(".poll")
   .addEventListener("click", poll.registerNewAnswer.bind(poll));
+
+(function () {
+  const header = document.querySelector("h1");
+  header.style.color = "red";
+
+  header.addEventListener("click", function () {
+    header.style.color = "blue";
+  });
+})();
