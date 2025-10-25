@@ -2137,7 +2137,7 @@ When your code allocates too often without release, the heap�
 
 ![🗎 View image](./images/class10-chapter10_1.jpg)
 
-### Class11 of Chapter10 - map method practice
+### Class11 of Chapter10 - The map method
 
 ![🗎 View image](./images/class11-chapter10_1.jpg)
 
@@ -2146,6 +2146,11 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class12-chapter10_1.jpg)
 ![🗎 View image](./images/class12-chapter10_2.jpg)
 
-### Class13 of Chapter10 - The Filter method
+### Class13 of Chapter10 - The filter method
 
 ![🗎 View image](./images/class13-chapter10_1.jpg)
+
+### Class14 of Chapter10 - The reduce method
+
+![🗎 View image](./images/class14-chapter10_1.jpg)
+![🗎 View image](./images/class14-chapter10_2.jpg)

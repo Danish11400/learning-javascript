@@ -196,3 +196,37 @@ let movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 let withdrawals = movements.filter((mov) => mov < 0);
 console.log(withdrawals);
 */
+
+/*
+let movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const balance = movements.reduce((acc, cur, i, arr) => {
+  console.log(`iteration ${i + 1} : accumulator = ${acc}, current = ${cur}`);
+  return acc + cur;
+}, 0);
+
+console.log(`Final balance: ${balance}`);
+
+// with for of loop
+
+let balanceFor = 0;
+for (const [i, mov] of movements.entries()) {
+  balanceFor += mov;
+  console.log(`iteration ${i + 1} : ${balanceFor}`);
+}
+
+*/
+
+const displaycalcBalance = function (accs) {
+  const avilableBalance = accs.movements.reduce(function (
+    acmltr,
+    currentAmount
+  ) {
+    return acmltr + currentAmount;
+  },
+  0);
+  labelBalance.textContent = `${avilableBalance}€`;
+  console.log(`${avilableBalance}€`);
+};
+
+displaycalcBalance(account1);
