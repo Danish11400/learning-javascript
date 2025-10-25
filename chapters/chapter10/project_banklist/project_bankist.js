@@ -70,12 +70,10 @@ const inputClosePin = document.querySelector(".form__input--pin");
 /////////////////////////////////////////////////
 // Functions
 
-const displayMovements = function (movements, sort = false) {
+const displayMovements = function (movements) {
   containerMovements.innerHTML = "";
 
-  const movs = sort ? movements.slice().sort((a, b) => a - b) : movements;
-
-  movs.forEach(function (mov, i) {
+  movements.forEach(function (mov, i) {
     const type = mov > 0 ? "deposit" : "withdrawal";
 
     const html = `
@@ -90,6 +88,8 @@ const displayMovements = function (movements, sort = false) {
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
 };
+
+displayMovements(account1.movements);
 /*
 <--------------------------------------------------------------------------------------------------->
 
