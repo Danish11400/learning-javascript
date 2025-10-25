@@ -2132,3 +2132,7 @@ When your code allocates too often without release, the heap�
 ### Class8-9 of Chapter10 - project banklist1
 
 ![🗎 View image](./images/class8-chapter10_1.jpg)
+
+### Class10 of Chapter10 - Data transformations
+
+![🗎 View image](./images/class10-chapter10_1.jpg)
