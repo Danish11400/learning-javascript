@@ -2140,3 +2140,8 @@ When your code allocates too often without release, the heap�
 ### Class11 of Chapter10 - map method practice
 
 ![🗎 View image](./images/class11-chapter10_1.jpg)
+
+### Class12 of Chapter10 - computing usernames
+
+![🗎 View image](./images/class12-chapter10_1.jpg)
+![🗎 View image](./images/class12-chapter10_2.jpg)

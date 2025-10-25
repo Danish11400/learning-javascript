@@ -158,3 +158,34 @@ afterend	Add after the element
 
 
 */
+
+/* practice of adding more proprties to object use in username case
+const obj = {
+  name: "Danish",
+  age: 18,
+};
+console.log(obj);
+
+obj.birthyear = 2007;
+console.log(obj);
+*/
+
+const createUserName = (accs) => {
+  for (const acc of accs) {
+    acc.userName = acc.owner
+      .toLowerCase()
+      .split(" ")
+      .map((name) => name[0])
+      .join("");
+  }
+};
+createUserName(accounts);
+console.log(accounts);
+/* 
+.toLowerCase()
+    .split(" ")
+    .map(function (usersIstLetter) {
+      return usersIstLetter[0];
+    })
+    .join("");
+    */
