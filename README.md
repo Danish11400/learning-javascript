@@ -2136,3 +2136,7 @@ When your code allocates too often without release, the heap�
 ### Class10 of Chapter10 - Data transformations
 
 ![🗎 View image](./images/class10-chapter10_1.jpg)
+
+### Class11 of Chapter10 - map method practice
+
+![🗎 View image](./images/class11-chapter10_1.jpg)

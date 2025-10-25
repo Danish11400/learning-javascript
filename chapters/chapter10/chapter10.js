@@ -24,4 +24,9 @@ movements.forEach(function (movement) {
   }
 });
 
-//  Class5 of Chapter10 - forEach looping over maps and sets
+//  Class11 of Chapter10 - .maps method practice
+
+const euroToUsd = 1.1;
+
+const movementUsd = movements.map((mov) => mov * euroToUsd);
+console.log(movementUsd);
