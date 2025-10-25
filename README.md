@@ -2145,3 +2145,7 @@ When your code allocates too often without release, the heap�
 
 ![🗎 View image](./images/class12-chapter10_1.jpg)
 ![🗎 View image](./images/class12-chapter10_2.jpg)
+
+### Class13 of Chapter10 - The Filter method
+
+![🗎 View image](./images/class13-chapter10_1.jpg)
