@@ -310,3 +310,35 @@ const calcAverageHumanAge = function (ages) {
 calcAverageHumanAge([5, 2, 4, 1, 15, 8, 31]);
 console.log(`<---------------->`);
 calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]);
+
+// Class 16- chapter 10 - the magic of chaining methods
+
+const euroToUsd = 1.1;
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+const totaldepositUsd = movements
+  .filter((mov) => mov > 0)
+  .map((mov) => mov * euroToUsd)
+  .reduce((acc, mov) => acc + mov, 0);
+console.log(totaldepositUsd);
+
+// now adding summary for our project
+
+const calcDisplaySummaryDeposits = function (accs) {
+  const income = accs.movements
+    .filter((mov) => mov > 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumIn.textContent = `${income}€`;
+
+  const outcome = accs.movements
+    .filter((mov) => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumOut.textContent = `${Math.abs(outcome)}€`;
+
+  const interest = accs.movements
+    .filter((mov) => mov > 0)
+    .map((deposit) => deposit * (accs.interestRate / 100))
+    .reduce((acc, int) => acc + int, 0);
+  labelSumInterest.textContent = `${interest}€`;
+};
+calcDisplaySummaryDeposits(account1);
