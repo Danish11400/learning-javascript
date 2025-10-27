@@ -366,10 +366,16 @@ btnLogin.addEventListener("click", function (e) {
     labelWelcome.textContent = `Welcome Back ${
       currentAccount.owner.split(" ")[0]
     }`;
+
     displayMovements(currentAccount.movements);
     displaycalcBalance(currentAccount);
     calcDisplaySummaryIncome(currentAccount);
     containerApp.style.opacity = 1;
+    // after login in our login----> username input and pin input still remains filled with our text so to clear that we can use
+    inputLoginUsername.value = "";
+    inputLoginPin.value = "";
+    //and we can also type like this .blur can make the value blur which means hidden and looks like it clear the inputs
+    // inputLoginPin.blur();
   } else {
     alert("Wrong username or PIN");
   }
