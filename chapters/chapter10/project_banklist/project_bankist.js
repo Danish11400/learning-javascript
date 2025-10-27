@@ -342,3 +342,10 @@ const calcDisplaySummaryDeposits = function (accs) {
   labelSumInterest.textContent = `${interest}€`;
 };
 calcDisplaySummaryDeposits(account1);
+
+// class17.
+const firstWithdrawal = movements.find((mov) => mov < 0);
+console.log(firstWithdrawal);
+
+const account = accounts.find((acc) => acc.interestRate === 1.2);
+console.log(account);
