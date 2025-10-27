@@ -89,7 +89,7 @@ const displayMovements = function (movements) {
   });
 };
 
-displayMovements(account1.movements);
+// displayMovements(account1.movements);
 /*
 <--------------------------------------------------------------------------------------------------->
 
@@ -229,7 +229,7 @@ const displaycalcBalance = function (accs) {
   console.log(`${avilableBalance}€`);
 };
 
-displaycalcBalance(account1);
+// displaycalcBalance(account1);
 
 /*
 
@@ -324,7 +324,7 @@ console.log(totaldepositUsd);
 
 // now adding summary for our project
 
-const calcDisplaySummaryDeposits = function (accs) {
+const calcDisplaySummaryIncome = function (accs) {
   const income = accs.movements
     .filter((mov) => mov > 0)
     .reduce((acc, mov) => acc + mov, 0);
@@ -341,11 +341,36 @@ const calcDisplaySummaryDeposits = function (accs) {
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}€`;
 };
-calcDisplaySummaryDeposits(account1);
+// calcDisplaySummaryIncome(account1);
 
 // class17. - the find method
+
 const firstWithdrawal = movements.find((mov) => mov < 0);
 console.log(firstWithdrawal);
 
 const account = accounts.find((acc) => acc.interestRate === 1.2);
 console.log(account);
+
+// class 18 - login implementation
+btnLogin.addEventListener("click", function (e) {
+  e.preventDefault(); // prevent form reload
+
+  const username = inputLoginUsername.value;
+  const pin = Number(inputLoginPin.value);
+
+  const currentAccount = accounts.find(
+    (acc) => acc.userName === username && acc.pin === pin
+  );
+
+  if (currentAccount) {
+    labelWelcome.textContent = `Welcome Back ${
+      currentAccount.owner.split(" ")[0]
+    }`;
+    displayMovements(currentAccount.movements);
+    displaycalcBalance(currentAccount);
+    calcDisplaySummaryIncome(currentAccount);
+    containerApp.style.opacity = 1;
+  } else {
+    alert("Wrong username or PIN");
+  }
+});
