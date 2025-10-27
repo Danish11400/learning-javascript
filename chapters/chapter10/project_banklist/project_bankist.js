@@ -225,6 +225,8 @@ const displaycalcBalance = function (accs) {
     return acmltr + currentAmount;
   },
   0);
+  accs.balance = avilableBalance; // sir did here that balance thing[ here add new property to our accounts called balance]
+
   labelBalance.textContent = `${avilableBalance}€`;
   console.log(`${avilableBalance}€`);
 };
@@ -387,36 +389,92 @@ btnLogin.addEventListener("click", function (e) {
 
 // AND ITS MY VERSION OF CODE MIGHT TURN IT OFF AFTER SEEINGS SIRS CODE
 
-const balance = Number(labelBalance.textContent.replace("€", ""));
-console.log(balance);
+/*
+
 
 btnTransfer.addEventListener("click", function (e) {
   e.preventDefault();
 
-  const balance = Number(labelBalance.textContent.replace("€", ""));
-  console.log(balance);
+  const balance = Number(labelBalance.textContent.replace("€", "")); // sir did here store balace in accounts like acc.balance=availablebalance [basically adding balace property to accounts in displaycalcBalance function and i just convert string into number which is related to avilablebalance and compare with that and be rebelious is good thing]
 
-  const transferedAccount = accounts.find(
+  const amountTransfer = Number(inputTransferAmount.value);
+  const amountRemoved = Number(-amountTransfer);
+
+  const receiverAccount = accounts.find(
     (name) => name?.userName === inputTransferTo.value
   );
 
-  const amountTranfer = Number(inputTransferAmount.value);
-  const amountRemoved = Number(-amountTranfer);
-
   if (balance === 0) {
     alert(`Your Account Have Zero(0) Amount`);
-  } else if (amountTranfer > balance) {
+  } else if (amountTransfer > balance) {
     alert(`Not Enough Money`);
   } else if (
-    transferedAccount !== currentAccount &&
+    receiverAccount !== currentAccount &&
     balance !== 0 &&
-    amountTranfer <= balance &&
-    amountTranfer > 0
+    amountTransfer <= balance &&
+    amountTransfer > 0
   ) {
-    transferedAccount.movements.push(amountTranfer);
+    receiverAccount.movements.push(amountTransfer);
     currentAccount.movements.push(amountRemoved);
     displayMovements(currentAccount.movements);
     displaycalcBalance(currentAccount);
     calcDisplaySummaryIncome(currentAccount);
   }
+
+  // clearing inputs
+
+  inputTransferTo.value = "";
+  inputTransferAmount.value = "";
+});
+*/
+
+// update UI function
+
+const updateUI = function (acc) {
+  displayMovements(acc.movements);
+  displaycalcBalance(acc);
+  calcDisplaySummaryIncome(acc);
+};
+
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  // guard clause first
+  if (!currentAccount) return;
+
+  const amountTransfer = Number(inputTransferAmount.value);
+  const amountRemoved = -amountTransfer;
+
+  const receiverAccount = accounts.find(
+    (name) => name?.userName === inputTransferTo.value
+  );
+
+  // if receiver account didnt exist or wrong username
+  if (!receiverAccount) {
+    alert("Receiver username not found!");
+    return;
+  }
+
+  if (amountTransfer <= 0) {
+    alert("Enter a valid amount!");
+    return;
+  } else if (currentAccount.balance === 0) {
+    alert(`Your Account Has Zero(0) Amount`);
+  } else if (amountTransfer > currentAccount.balance) {
+    alert(`Not Enough Money`);
+  } else if (
+    receiverAccount !== currentAccount &&
+    amountTransfer > 0 &&
+    amountTransfer <= currentAccount.balance
+  ) {
+    receiverAccount.movements.push(amountTransfer);
+    currentAccount.movements.push(amountRemoved);
+
+    // update UI for current account
+    updateUI(currentAccount);
+  }
+
+  // clearing inputs
+  inputTransferTo.value = "";
+  inputTransferAmount.value = "";
 });
