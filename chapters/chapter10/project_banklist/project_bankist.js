@@ -337,7 +337,7 @@ const calcDisplaySummaryIncome = function (accs) {
 
   const interest = accs.movements
     .filter((mov) => mov > 0)
-    .map((deposit) => deposit * (accs.interestRate / 100))
+    .map((deposit) => (deposit * accs.interestRate) / 100)
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}€`;
 };
@@ -352,13 +352,15 @@ const account = accounts.find((acc) => acc.interestRate === 1.2);
 console.log(account);
 
 // class 18 - login implementation
+let currentAccount;
+
 btnLogin.addEventListener("click", function (e) {
   e.preventDefault(); // prevent form reload
 
   const username = inputLoginUsername.value;
   const pin = Number(inputLoginPin.value);
 
-  const currentAccount = accounts.find(
+  currentAccount = accounts.find(
     (acc) => acc.userName === username && acc.pin === pin
   );
 
@@ -378,5 +380,43 @@ btnLogin.addEventListener("click", function (e) {
     // inputLoginPin.blur();
   } else {
     alert("Wrong username or PIN");
+  }
+});
+
+// class19. transfer amount
+
+// AND ITS MY VERSION OF CODE MIGHT TURN IT OFF AFTER SEEINGS SIRS CODE
+
+const balance = Number(labelBalance.textContent.replace("€", ""));
+console.log(balance);
+
+btnTransfer.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const balance = Number(labelBalance.textContent.replace("€", ""));
+  console.log(balance);
+
+  const transferedAccount = accounts.find(
+    (name) => name?.userName === inputTransferTo.value
+  );
+
+  const amountTranfer = Number(inputTransferAmount.value);
+  const amountRemoved = Number(-amountTranfer);
+
+  if (balance === 0) {
+    alert(`Your Account Have Zero(0) Amount`);
+  } else if (amountTranfer > balance) {
+    alert(`Not Enough Money`);
+  } else if (
+    transferedAccount !== currentAccount &&
+    balance !== 0 &&
+    amountTranfer <= balance &&
+    amountTranfer > 0
+  ) {
+    transferedAccount.movements.push(amountTranfer);
+    currentAccount.movements.push(amountRemoved);
+    displayMovements(currentAccount.movements);
+    displaycalcBalance(currentAccount);
+    calcDisplaySummaryIncome(currentAccount);
   }
 });
