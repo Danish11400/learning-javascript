@@ -2154,3 +2154,7 @@ When your code allocates too often without release, the heap�
 
 ![🗎 View image](./images/class14-chapter10_1.jpg)
 ![🗎 View image](./images/class14-chapter10_2.jpg)
+
+### class17. - the find method
+
+![🗎 View image](./images/class17-chapter10_1.jpg)

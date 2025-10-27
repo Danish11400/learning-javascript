@@ -343,7 +343,7 @@ const calcDisplaySummaryDeposits = function (accs) {
 };
 calcDisplaySummaryDeposits(account1);
 
-// class17.
+// class17. - the find method
 const firstWithdrawal = movements.find((mov) => mov < 0);
 console.log(firstWithdrawal);
 
