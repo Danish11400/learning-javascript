@@ -478,3 +478,39 @@ btnTransfer.addEventListener("click", function (e) {
   inputTransferTo.value = "";
   inputTransferAmount.value = "";
 });
+
+// class21 - the findIndex method
+const indexNumber = accounts.findIndex((mov) => mov.pin === 3333);
+console.log(indexNumber);
+
+// apply findIndex method for close account in our project
+btnClose.addEventListener("click", function (e) {
+  e.preventDefault(); // prevents auto refresh or reload
+
+  // quick guard: ensure someone is logged in
+  if (!currentAccount) return console.log("No account is logged in");
+
+  // guard: The logged user can only delete his account not others
+  if (
+    inputCloseUsername.value === currentAccount.userName &&
+    Number(inputClosePin.value) === currentAccount.pin
+  ) {
+    // Finds the index number of deleted account
+    const closeAccountIndexNUmber = accounts.findIndex(
+      (Credential) =>
+        Credential.userName === inputCloseUsername.value &&
+        Credential.pin === Number(inputClosePin.value)
+    );
+
+    // Deletes or removes the account from the accounts array
+    accounts.splice(closeAccountIndexNUmber, 1);
+
+    // hides the UI after clicking the btnClose
+    containerApp.style.opacity = 0;
+
+    // clears the input fields
+    inputCloseUsername.value = inputClosePin.value = "";
+  } else {
+    alert("Username or PIN incorrect / Enter logged account details only");
+  }
+});
