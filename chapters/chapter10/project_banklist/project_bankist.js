@@ -514,3 +514,31 @@ btnClose.addEventListener("click", function (e) {
     alert("Username or PIN incorrect / Enter logged account details only");
   }
 });
+
+// class23 - some and every method
+
+// working on loan on the project
+
+btnLoan.addEventListener("click", function (e) {
+  e.preventDefault(); // prevents auto reload [auto reload happens when we make a button in from element in html so to prevent auto reload we use this]
+  const loanAmount = Number(inputLoanAmount.value);
+
+  // Condition of bank
+  const approval = currentAccount.movements.some(
+    (mov) => mov >= (loanAmount * 10) / 100
+  );
+
+  // update UI
+  if (approval && loanAmount >= 0) {
+    currentAccount.movements.push(loanAmount);
+    updateUI(currentAccount);
+  } else if (!approval) {
+    alert(`         Not Eligible For That Loan Amount
+           rule: Loan Amount should be equal
+           to one deposit Atleast 10% of of 
+           Loan amount
+      `);
+  }
+  // clearing input field
+  inputLoanAmount.value = "";
+});

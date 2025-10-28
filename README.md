@@ -2167,3 +2167,7 @@ When your code allocates too often without release, the heap�
 ### class 21-22 - findIndex, findlast,findLastIndex methods
 
 ![🗎 View image](./images/class21_22-chapter10_1.jpg)
+
+### class23 - some and every method
+
+![🗎 View image](./images/class23-chapter10_1.jpg)
