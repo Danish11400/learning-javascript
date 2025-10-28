@@ -528,11 +528,12 @@ btnLoan.addEventListener("click", function (e) {
     (mov) => mov >= (loanAmount * 10) / 100
   );
 
-  // update UI
+  // update UI if condition is true
   if (approval && loanAmount >= 0) {
     currentAccount.movements.push(loanAmount);
     updateUI(currentAccount);
   } else if (!approval) {
+    // if condition is false
     alert(`         Not Eligible For That Loan Amount
            rule: Loan Amount should be equal
            to one deposit Atleast 10% of of 
