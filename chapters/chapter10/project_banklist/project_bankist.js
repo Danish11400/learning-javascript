@@ -539,9 +539,7 @@ btnLoan.addEventListener("click", function (e) {
     updateUI(currentAccount);
   } else if (!approval) {
     // if condition is false
-    alert(`Not Eligible For That Loan Amount /n rule: Loan Amount should be equal
-           to one deposit Atleast 10% of of 
-           Loan amount
+    alert(`Not Eligible For That Loan Amount \n rule: Loan Amount should be equal \n to deposit Atleast 10% of Loan amount
       `);
   }
   // clearing input field
@@ -619,12 +617,46 @@ const breeds = [
 // 1. Store the the average weight of a "Husky" in a variable "huskyWeight"
 
 const huskyIndexNumber = breeds.findIndex((name) => name.breed === "Husky");
-console.log(huskyIndexNumber);
 
 const huskyWeight = breeds.at(huskyIndexNumber).averageWeight;
 console.log(huskyWeight);
 
 // 2. Find the name of the only breed that likes both "running" and "fetch" ("dogBothActivities" variable)
 
+const dogBothActivities = breeds.find(
+  (breeds) =>
+    breeds.activities.includes("running") && breeds.activities.includes("fetch")
+).breed;
+console.log(dogBothActivities);
 
+// 3. Create an array "allActivities" of all the activities of all the dog breeds
+const allActivities = breeds.map((mov) => mov.activities).flat();
+console.log(allActivities);
 
+// 4. Create an array "uniqueActivities" that contains only the unique activities (no activity repetitions). HINT: Use a technique with a special data structure that we studied a few sections ago.
+
+const uniqueActivities = new Set(allActivities);
+console.log(uniqueActivities);
+
+// 5. Many dog breeds like to swim. What other activities do these dogs like? Store all the OTHER activities these breeds like to do, in a unique array called "swimmingAdjacent".
+
+const swimmingAdjacent = [
+  ...new Set(
+    breeds
+      .filter((dog) => dog.activities.includes("swimming")) // Step 1: only dogs that swim
+      .flatMap((dog) =>
+        dog.activities // here : makes the activities of dogs that contains swimming into flat array ist map[becoz map returns a array] it then flat it
+          .filter((act) => act !== "swimming")
+      ) // Step 2: get all other activities
+  ),
+];
+
+console.log(swimmingAdjacent);
+
+// 6. Do all the breeds have an average weight of 10kg or more? Log to the console whether "true" or "false".
+
+console.log(breeds.every((accounts) => accounts.averageWeight >= 10));
+
+// 7. Are there any breeds that are "active"? "Active" means that the dog has 3 or more activities. Log to the console whether "true" or "false".
+
+console.log(breeds.some((account) => account.activities.length >= 3));
