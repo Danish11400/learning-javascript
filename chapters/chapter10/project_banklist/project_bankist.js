@@ -625,3 +625,6 @@ const huskyWeight = breeds.at(huskyIndexNumber).averageWeight;
 console.log(huskyWeight);
 
 // 2. Find the name of the only breed that likes both "running" and "fetch" ("dogBothActivities" variable)
+
+
+
