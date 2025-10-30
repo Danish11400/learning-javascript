@@ -2171,3 +2171,8 @@ When your code allocates too often without release, the heap�
 ### class23 - some and every method
 
 ![🗎 View image](./images/class23-chapter10_1.jpg)
+
+### Class26-chapter10- sorting arrays
+
+![🗎 View image](./images/class26-chapter10_1.jpg)
+![🗎 View image](./images/class26-chapter10_2.jpg)

@@ -76,23 +76,29 @@ const inputClosePin = document.querySelector(".form__input--pin");
 /////////////////////////////////////////////////
 // Functions
 
-const displayMovements = function (movements) {
+const displayMovements = function (movements, sort = false) {
+  // keep sort default value false
   containerMovements.innerHTML = "";
 
-  movements.forEach(function (mov, i) {
-    const type = mov > 0 ? "deposit" : "withdrawal";
+  //sorted thing according to sir  // and use .slice here becoz change copy thing not original one becaus eif once original is changed then nothing goes good for second click
+  const mov = sort ? movements.slice().sort((a, b) => a - b) : movements; // here i a saying that if sort = true then mov=movements.sort((a, b) => a - b) or if sort = false then mov= simple movements
 
-    const html = `
+  /* and here we change movements to movs that we control by sorting*/ mov.forEach(
+    function (mov, i) {
+      const type = mov > 0 ? "deposit" : "withdrawal";
+
+      const html = `
       <div class="movements__row">
         <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+        i + 1
+      } ${type}</div>
         <div class="movements__value">${mov}€</div>
       </div>
     `;
 
-    containerMovements.insertAdjacentHTML("afterbegin", html);
-  });
+      containerMovements.insertAdjacentHTML("afterbegin", html);
+    }
+  );
 };
 
 // displayMovements(account1.movements);
@@ -660,3 +666,91 @@ console.log(breeds.every((accounts) => accounts.averageWeight >= 10));
 // 7. Are there any breeds that are "active"? "Active" means that the dog has 3 or more activities. Log to the console whether "true" or "false".
 
 console.log(breeds.some((account) => account.activities.length >= 3));
+
+// Class26-chapter10- sorting arrays
+
+const owner = [
+  "yaraokber",
+  "zach",
+  "temu",
+  "labran",
+  "abdullah",
+  "srgam",
+  "xelop",
+];
+console.log(owner.sort());
+
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (b > a) return -1;
+});
+console.log(movements);
+
+// Remember one thing in js in sorting we compare two numbers (a,b) if
+// return is positive ----> keeps a after b ----> so b comes ist
+// return is negative -----> keeps a before b -----> so a comes ist
+
+// eg.
+
+/*
+[a, b] = [5, 2];
+if (a > b) return 1;
+
+*/
+
+/* -----> here a>b | 5>2 so true and here we return 1(positive) and in positive keeps a after b ------>  so b comes ist so reult is ---->*/ console.log(
+  [2, 5] // i mean [b,a]
+);
+// and same logic with negative
+// IN SIMPLE (+ive)-----> switch ordern & (-ive)-------> keeps same order
+// ascending order also use a-b and for descending order use b-a
+
+// working on sort element in banklist project
+
+// and its my way to do that lets check sirs way sir  do most of the things inthhe movemment function ok to check that go line no. 79 and then come back here
+
+/*
+btnSort.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  if (currentAccount) {
+    // store original copy order before sorting
+    const originalMovements = currentAccount.movements.slice();
+
+    // sort ascending
+    currentAccount.movements.sort((a, b) => a - b);
+    updateUI(currentAccount);
+
+    // now handle the "unsort" click
+    btnSort.addEventListener(
+      "click",
+      function (e) {
+        e.preventDefault();
+        if (currentAccount) {
+          // restore original order
+          currentAccount.movements = originalMovements.slice();
+          updateUI(currentAccount);
+        }
+      },
+      { once: true } // 🔥 ensures this second listener runs only once
+    );
+  }
+});
+
+*/
+
+let sorted = false;
+btnSort.addEventListener("click", function (e) {
+  e.preventDefault();
+  displayMovements(currentAccount.movements, !sorted); // here we put true so when i click sort button then we call the displaymovements function and it runs and sort is true and should use mov=sorted movements
+
+  // ok now if we again click the sort it shouls go normal for that we use on line no 744 we make a cont namely sorted and keep it false then and insted we use to call the function with true here we use sorted is not falsy = true[!sorted]--->[!falsy]=true
+
+  // And this helps us in normalize the sort on 2nd click
+
+  sorted = !sorted; // value of sorted reversed when we ist click on sort button then sorted = true here after running upper part now here reversed due to sorted = !sorted;
+  // so now sorted which we keep false is now becomes true and now if we click again on sorted button false is turned into true due to ist click now n 2nd click displayMovements(currentAccount.movements, !sorted); here this sorted is !sorted -----> !true = false and in dispalyMovements function when sort = false then mov =  simple movements
+  // and runs till here due to second click we use  sorted = !sorted this again change sorted into false now and this goes on on ist click sorted = true at last for 2nd click and on second click sorted becomes false at last for 3rd click and on 3rd click ..... same thing........ keeps running......
+});
