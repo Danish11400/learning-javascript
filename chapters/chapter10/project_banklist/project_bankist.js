@@ -754,3 +754,28 @@ btnSort.addEventListener("click", function (e) {
   // so now sorted which we keep false is now becomes true and now if we click again on sorted button false is turned into true due to ist click now n 2nd click displayMovements(currentAccount.movements, !sorted); here this sorted is !sorted -----> !true = false and in dispalyMovements function when sort = false then mov =  simple movements
   // and runs till here due to second click we use  sorted = !sorted this again change sorted into false now and this goes on on ist click sorted = true at last for 2nd click and on second click sorted becomes false at last for 3rd click and on 3rd click ..... same thing........ keeps running......
 });
+
+// Class27- chapter10 - the array grouping
+
+console.log(movements);
+const groupedArray = Object.groupBy(movements, (mov) => {
+  return mov >= 0 ? "deposits" : "withdrawls";
+});
+console.log(groupedArray);
+
+// activity
+
+const groupedByActivity = Object.groupBy(accounts, (acc) => {
+  const movCount = acc.movements.length;
+  if (movCount >= 8) return "very active";
+  if (movCount >= 4) return "active";
+  if (movCount >= 2) return "moderate";
+  return "inactive";
+});
+
+console.log(groupedByActivity);
+
+const groupedaccounts = Object.groupBy(accounts, (acc) => {
+  return acc.type;
+});
+console.log(groupedaccounts);
