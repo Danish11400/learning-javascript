@@ -515,7 +515,7 @@ btnClose.addEventListener("click", function (e) {
     );
 
     // Deletes or removes the account from the accounts array
-
+    accounts.splice(closeAccountIndexNUmber, 1);
     // hides the UI after clicking the btnClose
     containerApp.style.opacity = 0;
 
