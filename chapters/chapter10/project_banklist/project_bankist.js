@@ -795,3 +795,11 @@ const y = Array.from({ length: 100 }, (cur, i) => {
   return (i = Math.trunc(Math.random() * 100) + 1);
 });
 console.log(y);
+
+//  Class29 - Destruction alternatives
+
+const hello = movements.toReversed();
+console.log(hello);
+
+const newMoment = movements.with(2, 3200);
+console.log(newMoment);
