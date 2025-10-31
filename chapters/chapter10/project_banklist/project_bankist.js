@@ -467,6 +467,10 @@ btnTransfer.addEventListener("click", function (e) {
     return;
   }
 
+  if (currentAccount === receiverAccount) {
+    alert(`you cant send money to yourself`);
+  }
+
   if (amountTransfer <= 0) {
     alert("Enter a valid amount!");
     return;
@@ -779,3 +783,15 @@ const groupedaccounts = Object.groupBy(accounts, (acc) => {
   return acc.type;
 });
 console.log(groupedaccounts);
+
+// Class28 - More ways of creating and filling arrays
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+arr.fill(21, 2, 6);
+console.log(arr);
+
+const y = Array.from({ length: 100 }, (cur, i) => {
+  return (i = Math.trunc(Math.random() * 100) + 1);
+});
+console.log(y);
