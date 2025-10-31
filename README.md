@@ -2190,3 +2190,8 @@ When your code allocates too often without release, the heap�
 ### Class29 - Destruction alternatives
 
 ![🗎 View image](./images/class29-chapter10_1.jpg)
+
+### Class30 - which method should we uesd
+
+![🗎 View image](./images/class30-chapter10.png)
+![🗎 View image](./images/class30-chapter10_2.png)
