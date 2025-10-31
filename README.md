@@ -2188,3 +2188,5 @@ When your code allocates too often without release, the heap�
 ![🗎 View image](./images/class28-chapter10_2.jpg)
 
 ### Class29 - Destruction alternatives
+
+![🗎 View image](./images/class29-chapter10_1.jpg)
